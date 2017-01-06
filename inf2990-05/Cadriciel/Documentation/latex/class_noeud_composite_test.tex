@@ -1,0 +1,169 @@
+\hypertarget{class_noeud_composite_test}{}\section{Noeud\+Composite\+Test Class Reference}
+\label{class_noeud_composite_test}\index{Noeud\+Composite\+Test@{Noeud\+Composite\+Test}}
+
+
+Classe de test cppunit pour tester le bon fonctionnement des méthodes de la classe \hyperlink{class_noeud_composite_test}{Noeud\+Composite\+Test}.  
+
+
+
+
+{\ttfamily \#include $<$Noeud\+Composite\+Test.\+h$>$}
+
+Inheritance diagram for Noeud\+Composite\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_noeud_composite_test}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_noeud_composite_test_ac580ba74910c8d4e8476ce2f4e1930a2}{set\+Up} ()
+\begin{DoxyCompactList}\small\item\em Traitement à effectuer pour initialiser cette suite de tests. \end{DoxyCompactList}\item 
+void \hyperlink{class_noeud_composite_test_aab8590913d1e0ce48d52ca2875c12c92}{tear\+Down} ()\hypertarget{class_noeud_composite_test_aab8590913d1e0ce48d52ca2875c12c92}{}\label{class_noeud_composite_test_aab8590913d1e0ce48d52ca2875c12c92}
+
+\begin{DoxyCompactList}\small\item\em Traitement à effectuer pour \textquotesingle{}finaliser\textquotesingle{} cette suite de tests. \end{DoxyCompactList}\item 
+void \hyperlink{class_noeud_composite_test_a9dc8155dc795120e1d6abfbbee81161b}{test\+Effacer\+Selection} ()
+\item 
+void \hyperlink{class_noeud_composite_test_a573f6651d0bed4823bae0c6ab5acc2a8}{test\+Tuer\+Rondelle} ()
+\item 
+void \hyperlink{class_noeud_composite_test_ae6e5ecfa0bfef3aa50bbfe4b082821e9}{test\+Obtenir\+Nombre\+Enfants} ()
+\begin{DoxyCompactList}\small\item\em Cas de test\+: On teste le nombre d\textquotesingle{}enfants d\textquotesingle{}un noeud composite (\hyperlink{class_noeud_table}{Noeud\+Table} ) \end{DoxyCompactList}\item 
+void \hyperlink{class_noeud_composite_test_a5e667d5f1bc2bf30fe013e5a630d95d5}{test\+Vider} ()
+\item 
+void \hyperlink{class_noeud_composite_test_a0fe5f149accdfe6675af1aae2051d734}{chercher\+Test} ()
+\item 
+void \hyperlink{class_noeud_composite_test_a932b3287a90f8b5f6890b76cb748573b}{afficher\+Concret\+Test} ()
+\item 
+void \hyperlink{class_noeud_composite_test_a7b3ee658f77ab63bba434d35fdb72284}{test\+Deselectionner\+Tout} ()
+\begin{DoxyCompactList}\small\item\em Cas de test\+: On test s\textquotesingle{}il est possible de déselectionner tous les objets sélectionnés \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe de test cppunit pour tester le bon fonctionnement des méthodes de la classe \hyperlink{class_noeud_composite_test}{Noeud\+Composite\+Test}. 
+
+\begin{DoxyAuthor}{Author}
+Julien Gascon-\/\+Samson modifie par Equipe 05 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2016-\/11-\/06 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\index{Noeud\+Composite\+Test@{Noeud\+Composite\+Test}!afficher\+Concret\+Test@{afficher\+Concret\+Test}}
+\index{afficher\+Concret\+Test@{afficher\+Concret\+Test}!Noeud\+Composite\+Test@{Noeud\+Composite\+Test}}
+\subsubsection[{\texorpdfstring{afficher\+Concret\+Test()}{afficherConcretTest()}}]{\setlength{\rightskip}{0pt plus 5cm}void Noeud\+Composite\+Test\+::afficher\+Concret\+Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_noeud_composite_test_a932b3287a90f8b5f6890b76cb748573b}{}\label{class_noeud_composite_test_a932b3287a90f8b5f6890b76cb748573b}
+cas de test\+: on teste la methode qui s\textquotesingle{}occupe d\textquotesingle{}afficher les enfant de l\textquotesingle{}arbre bien sure que cette derive de la la classe noeud abstrait.
+
+Cas de test\+: on teste la methode qui s\textquotesingle{}occupe d\textquotesingle{}afficher les enfant de l\textquotesingle{}arbre bien sure que cette derive de la la classe noeud abstrait. \begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\index{Noeud\+Composite\+Test@{Noeud\+Composite\+Test}!chercher\+Test@{chercher\+Test}}
+\index{chercher\+Test@{chercher\+Test}!Noeud\+Composite\+Test@{Noeud\+Composite\+Test}}
+\subsubsection[{\texorpdfstring{chercher\+Test()}{chercherTest()}}]{\setlength{\rightskip}{0pt plus 5cm}void Noeud\+Composite\+Test\+::chercher\+Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_noeud_composite_test_a0fe5f149accdfe6675af1aae2051d734}{}\label{class_noeud_composite_test_a0fe5f149accdfe6675af1aae2051d734}
+cas de test\+: on teste la methode qui s\textquotesingle{}occupe de la recherche des enfants de l arbre selon leurs noms et renvoie un null si l enfant n est pas dans l arbre ou l enfant s il est dans l arbre
+
+Cas de test\+: chercher un noeud grace a son nom.\+on ajoute des noeuds a la table que nous avons initialisés puis on verifie que c est effectivement ceux qui sont sur la table (on profitepour tester aussi ajouter()) \begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\index{Noeud\+Composite\+Test@{Noeud\+Composite\+Test}!set\+Up@{set\+Up}}
+\index{set\+Up@{set\+Up}!Noeud\+Composite\+Test@{Noeud\+Composite\+Test}}
+\subsubsection[{\texorpdfstring{set\+Up()}{setUp()}}]{\setlength{\rightskip}{0pt plus 5cm}void Noeud\+Composite\+Test\+::set\+Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_noeud_composite_test_ac580ba74910c8d4e8476ce2f4e1930a2}{}\label{class_noeud_composite_test_ac580ba74910c8d4e8476ce2f4e1930a2}
+
+
+Traitement à effectuer pour initialiser cette suite de tests. 
+
+Effectue l\textquotesingle{}initialisation préalable à l\textquotesingle{}exécution de l\textquotesingle{}ensemble des cas de tests de cette suite de tests (si nécessaire).
+
+Si certains objets doivent être construits, il est conseillé de le faire ici.
+
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\index{Noeud\+Composite\+Test@{Noeud\+Composite\+Test}!test\+Deselectionner\+Tout@{test\+Deselectionner\+Tout}}
+\index{test\+Deselectionner\+Tout@{test\+Deselectionner\+Tout}!Noeud\+Composite\+Test@{Noeud\+Composite\+Test}}
+\subsubsection[{\texorpdfstring{test\+Deselectionner\+Tout()}{testDeselectionnerTout()}}]{\setlength{\rightskip}{0pt plus 5cm}void Noeud\+Composite\+Test\+::test\+Deselectionner\+Tout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_noeud_composite_test_a7b3ee658f77ab63bba434d35fdb72284}{}\label{class_noeud_composite_test_a7b3ee658f77ab63bba434d35fdb72284}
+
+
+Cas de test\+: On test s\textquotesingle{}il est possible de déselectionner tous les objets sélectionnés 
+
+Cas de test\+: On test s\textquotesingle{}il est possible de déselectionner tous les objets sélectionnés \begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\index{Noeud\+Composite\+Test@{Noeud\+Composite\+Test}!test\+Effacer\+Selection@{test\+Effacer\+Selection}}
+\index{test\+Effacer\+Selection@{test\+Effacer\+Selection}!Noeud\+Composite\+Test@{Noeud\+Composite\+Test}}
+\subsubsection[{\texorpdfstring{test\+Effacer\+Selection()}{testEffacerSelection()}}]{\setlength{\rightskip}{0pt plus 5cm}void Noeud\+Composite\+Test\+::test\+Effacer\+Selection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_noeud_composite_test_a9dc8155dc795120e1d6abfbbee81161b}{}\label{class_noeud_composite_test_a9dc8155dc795120e1d6abfbbee81161b}
+Cas de test\+: effacer une selection(un objet sélectionné) Ce test permet de tester si la fonction effacer\+Selection() fonctionne bien. Il est utile de le tester, puisque l\textquotesingle{}édition d\textquotesingle{}une zone de jeu est une partie importante du livrable 1. Pour éditer, la suppression d\textquotesingle{}un objet est une partie très importante. De plus, il est aussi possible de vérifier en même temps si la fonction ajouter(\+Noeud\+Abstrait$\ast$ enfant) est fonctionnelle. La fonction ajouter(...) est primordiale, car elle permet d\textquotesingle{}ajouter différents enfants à notre arbre permettant alors de les manipuler
+
+Cas de test\+: effacer une selection(un objet sélectionné) Ce test permet de tester si la fonction effacer\+Selection() fonctionne bien. Il est utile de le tester, puisque l\textquotesingle{}édition d\textquotesingle{}une zone de jeu est une partie importante du livrable 1. Pour éditer, la suppression d\textquotesingle{}un objet est une partie très importante. De plus, il est aussi possible de vérifier en même temps si la fonction ajouter(\+Noeud\+Abstrait$\ast$ enfant) est fonctionnelle. La fonction ajouter(...) est primordiale, car elle permet d\textquotesingle{}ajouter différents enfants à notre arbre permettant alors de les manipuler
+
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\index{Noeud\+Composite\+Test@{Noeud\+Composite\+Test}!test\+Obtenir\+Nombre\+Enfants@{test\+Obtenir\+Nombre\+Enfants}}
+\index{test\+Obtenir\+Nombre\+Enfants@{test\+Obtenir\+Nombre\+Enfants}!Noeud\+Composite\+Test@{Noeud\+Composite\+Test}}
+\subsubsection[{\texorpdfstring{test\+Obtenir\+Nombre\+Enfants()}{testObtenirNombreEnfants()}}]{\setlength{\rightskip}{0pt plus 5cm}void Noeud\+Composite\+Test\+::test\+Obtenir\+Nombre\+Enfants (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_noeud_composite_test_ae6e5ecfa0bfef3aa50bbfe4b082821e9}{}\label{class_noeud_composite_test_ae6e5ecfa0bfef3aa50bbfe4b082821e9}
+
+
+Cas de test\+: On teste le nombre d\textquotesingle{}enfants d\textquotesingle{}un noeud composite (\hyperlink{class_noeud_table}{Noeud\+Table} ) 
+
+Cas de test\+: nombre d\textquotesingle{}enfants du noeud Table \begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\index{Noeud\+Composite\+Test@{Noeud\+Composite\+Test}!test\+Tuer\+Rondelle@{test\+Tuer\+Rondelle}}
+\index{test\+Tuer\+Rondelle@{test\+Tuer\+Rondelle}!Noeud\+Composite\+Test@{Noeud\+Composite\+Test}}
+\subsubsection[{\texorpdfstring{test\+Tuer\+Rondelle()}{testTuerRondelle()}}]{\setlength{\rightskip}{0pt plus 5cm}void Noeud\+Composite\+Test\+::test\+Tuer\+Rondelle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_noeud_composite_test_a573f6651d0bed4823bae0c6ab5acc2a8}{}\label{class_noeud_composite_test_a573f6651d0bed4823bae0c6ab5acc2a8}
+Cas de test\+: tuer la rondelle Ce test permet de tester si la fonction tuer\+Rondelle() fonctionne bien. Il est utile de le tester, puisque nous devons être capable de tuer la rondelle lorsque nous passons du mode test au mode d\textquotesingle{}édition, ainsi que lorsque nous sortons de partie rapide et de tournoi. En effet, nous ne devons plus voir la rondelle sur la table rendu en mode d\textquotesingle{}édition. De plus, il est intéressant de le tester, car le bon fonctionnement de celle-\/ci implique que les fonctions pour tuer les 2 maillets sont également fonctionnelles.
+
+Cas de test\+: tuer la rondelle Ce test permet de tester si la fonction tuer\+Rondelle() fonctionne bien. Il est utile de le tester, puisque nous devons être capable de tuer la rondelle lorsque nous passons du mode test au mode d\textquotesingle{}édition, ainsi que lorsque nous sortons de partie rapide et de tournoi. En effet, nous ne devons plus voir la rondelle sur la table rendu en mode d\textquotesingle{}édition. De plus, il est intéressant de le tester, car le bon fonctionnement de celle-\/ci implique que les fonctions pour tuer les 2 maillets sont également fonctionnelles.
+
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+\index{Noeud\+Composite\+Test@{Noeud\+Composite\+Test}!test\+Vider@{test\+Vider}}
+\index{test\+Vider@{test\+Vider}!Noeud\+Composite\+Test@{Noeud\+Composite\+Test}}
+\subsubsection[{\texorpdfstring{test\+Vider()}{testVider()}}]{\setlength{\rightskip}{0pt plus 5cm}void Noeud\+Composite\+Test\+::test\+Vider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_noeud_composite_test_a5e667d5f1bc2bf30fe013e5a630d95d5}{}\label{class_noeud_composite_test_a5e667d5f1bc2bf30fe013e5a630d95d5}
+Cas de test\+: On teste la methode qui vide un noeud derivant du noeud composite de ses enfants
+
+Cas de test\+: vider un noeud composite Table de ses enfants \begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+D\+L\+L/\+Tests/\hyperlink{_noeud_composite_test_8h}{Noeud\+Composite\+Test.\+h}\item 
+Sources/\+D\+L\+L/\+Tests/\hyperlink{_noeud_composite_test_8cpp}{Noeud\+Composite\+Test.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <uneTouche>
+    <haut>w</haut>
+    <bas>s</bas>
+    <gauche>a</gauche>
+    <droit>d</droit>
+  </uneTouche>
+  <unDebogage>
+    <collision>false</collision>
+    <lumiere>false</lumiere>
+    <attractionPortail>false</attractionPortail>
+  </unDebogage>
+  <but>2</but>
+  <typeJoueur>humain</typeJoueur>
+</Config>

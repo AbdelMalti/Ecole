@@ -1,0 +1,257 @@
+\hypertarget{class_facade_modele}{}\section{Facade\+Modele Class Reference}
+\label{class_facade_modele}\index{Facade\+Modele@{Facade\+Modele}}
+
+
+Classe qui constitue une interface (une façade) sur l\textquotesingle{}ensemble du modèle et des classes qui le composent.  
+
+
+
+
+{\ttfamily \#include $<$Facade\+Modele.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__inf2990_gabf12ccafbabf1049cb8327cf78699a1b}{initialiser\+Open\+GL} (H\+W\+ND h\+Wnd)
+\begin{DoxyCompactList}\small\item\em Crée un contexte Open\+GL et initialise celui-\/ci. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga4967547e0683bfdca700118df1c18bca}{charger\+Configuration} () const 
+\begin{DoxyCompactList}\small\item\em Charge la configuration à partir d\textquotesingle{}un fichier X\+ML. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga277d8d9cea21e20fb366a0d48525f2c9}{enregistrer\+Configuration} () const 
+\begin{DoxyCompactList}\small\item\em Enregistre la configuration courante dans un fichier X\+ML. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gac7b831ce13626514e9637c4533d7c15d}{liberer\+Open\+GL} ()
+\begin{DoxyCompactList}\small\item\em Libère le contexte Open\+GL. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gac884e818dab5fe049a37b3f6f1c5d8c6}{afficher} () const 
+\begin{DoxyCompactList}\small\item\em Affiche le contenu du modèle. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga23bed5e3b226e446cfee30084150f7f7}{afficher\+Base} () const 
+\begin{DoxyCompactList}\small\item\em Affiche la base du contenu du modèle. \end{DoxyCompactList}\item 
+vue\+::\+Vue $\ast$ \hyperlink{group__inf2990_gaa56cf96b7e381e0f14e2c9a55be913bf}{obtenir\+Vue} ()
+\begin{DoxyCompactList}\small\item\em Retourne la vue courante. \end{DoxyCompactList}\item 
+const \hyperlink{class_arbre_rendu_i_n_f2990}{Arbre\+Rendu\+I\+N\+F2990} $\ast$ \hyperlink{group__inf2990_gaf578161d03b2157cdaa3182900ff61cc}{obtenir\+Arbre\+Rendu\+I\+N\+F2990} () const 
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}arbre de rendu. \end{DoxyCompactList}\item 
+\hyperlink{class_arbre_rendu_i_n_f2990}{Arbre\+Rendu\+I\+N\+F2990} $\ast$ \hyperlink{group__inf2990_ga12d5594db6a9507b24c7e1ffcd6751af}{obtenir\+Arbre\+Rendu\+I\+N\+F2990} ()
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}arbre de rendu. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga4c2a991fe2297e44eeee0de111fb08d2}{reinitialiser} ()
+\begin{DoxyCompactList}\small\item\em Réinitialise la scène. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga24dcb4e32cf104797158b398bafbfbb7}{animer} (float temps)
+\begin{DoxyCompactList}\small\item\em Anime la scène. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gac0936e69ec23a534d7dd886706c6ce76}{initialiser\+Rectangle} (int pX, int pY)
+\item 
+void \hyperlink{group__inf2990_gacb29e8e29365175e9b867daa5c0c2842}{mettre\+A\+Jour\+Rectangle} (int piX, int piY, int paX, int paY, int pdX, int pdY, bool en\+Selection)
+\item 
+void \hyperlink{group__inf2990_ga3d05d12ab9dcfb02e1bc9c08d67a1154}{terminer\+Rectangle} (int p\+IX, int p\+IY, int p\+FX, int p\+FY)
+\item 
+void \hyperlink{group__inf2990_ga20730039a2179c3e6faac7c90b3e2c2c}{ajouter\+Noeud\+Bonus} (int posX, int posY)
+\begin{DoxyCompactList}\small\item\em Ajoute un bonus accelerateur. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga8ca570f2de4c39ed322338539e12bc2e}{ajouter\+Noeud\+Portail} (int posX, int posY)
+\begin{DoxyCompactList}\small\item\em Ajoute un portail. \end{DoxyCompactList}\item 
+bool \hyperlink{group__inf2990_gae3cfa91b47575a6e4fe69c73155f9eed}{est\+Dans\+Zone\+De\+Jeu} (glm\+::vec3 point)
+\begin{DoxyCompactList}\small\item\em Verifie si l\textquotesingle{}objet ajoute se trouve dans la zone de jeu. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga08b419e94596295577dc19684d067d5a}{initialiser\+Deplacement} (double x, double y)
+\item 
+void \hyperlink{group__inf2990_gaa0d5757cfb24934510442a133cbd9cb8}{deplacement} (double x, double y)
+\item 
+void \hyperlink{group__inf2990_ga6c701a76ca7d5d68c9494e40705d99c9}{mise\+A\+Echelle} (double y)
+\item 
+void \hyperlink{group__inf2990_ga41442a4f447d6214ad17d876e8722969}{supprimer} ()
+\item 
+void \hyperlink{group__inf2990_gae7472c669c59b810ff2c37c0e01d36f2}{ajouter\+Noeud\+Muret} (int posX, int posY)
+\item 
+void \hyperlink{group__inf2990_gaf726b1d0e259f2cfda6a0be1b2190da4}{initialiser\+Rotation} (double y)
+\item 
+void \hyperlink{group__inf2990_ga10a1a7e2686ee456c377e39844f2416c}{rotation} (double y)
+\item 
+void \hyperlink{group__inf2990_gade9693aa493117233c9fe67521a9978f}{initialiser\+Duplication} (double x, double y)
+\item 
+void \hyperlink{group__inf2990_ga852310ff5fc32c6887de938c5459e97c}{duplication} (double x, double y)
+\item 
+void \hyperlink{group__inf2990_gabb618d358ec72076d44f786f6b4eda4a}{selectionner} (int posX, int posY, bool est\+Selectionne)
+\begin{DoxyCompactList}\small\item\em Permet la selectionne de noeud. \end{DoxyCompactList}\item 
+double {\bfseries obtenir\+Coefficient\+Friction} ()
+\item 
+void \hyperlink{group__inf2990_gaed2e9cf798ce1b4e597d08e71fdf5e2f}{modifier\+Coefficient\+Friction} (double friction)
+\item 
+void \hyperlink{group__inf2990_ga620c6ede44e1bfec76fe10d5e8477a2a}{deselectionner\+Tout} ()
+\begin{DoxyCompactList}\small\item\em Désélectionne tous les enfants de même que le noeud. \end{DoxyCompactList}\item 
+double \hyperlink{group__inf2990_gaa0aa6303f21dcc29ec277ade3352c2b8}{obtenir\+Acceleration} ()
+\item 
+void \hyperlink{group__inf2990_gaa30110841efcec8780dfc899bbb43cfd}{modifier\+Acceleration} (double acceleration)
+\item 
+double \hyperlink{group__inf2990_ga5a1ef258a551c17e832f9e9d10e60809}{obtenir\+Rebond} ()
+\item 
+void \hyperlink{group__inf2990_gac17734c68c2c99a50b6f6f55a82a92ac}{modifier\+Rebond} (double rebond)
+\item 
+void \hyperlink{group__inf2990_gafbce58a247979282b76aaff46f996c80}{determiner\+Couleur} (int sourisX, int sourisY, G\+Lubyte couleur\+D\+Un\+Pixel\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Permet la determination de la couleur d\textquotesingle{}un pixel. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gaf3fdb444551e73e6469cedaecfdc9dc2}{tuer\+Maillet} ()
+\begin{DoxyCompactList}\small\item\em Tuer rondelle et maillet lors du retour au mode edition. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga117ca6137a4e9f3d31597b24bd407b34}{tuer\+Maillet\+Ordi} ()
+\item 
+void \hyperlink{group__inf2990_gad62040ee8b92d8f137db3779895c6505}{tuer\+Rondelle} ()
+\item 
+void \hyperlink{group__inf2990_ga6e8a9815a16db06e150a85b4421633c9}{generer\+Maillet} ()
+\begin{DoxyCompactList}\small\item\em Générer rondelle et maillet en mode edition. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gabdbde97bcdbc25878065156a25359d16}{generer\+Maillet\+Ordi} ()
+\item 
+void \hyperlink{group__inf2990_gaa320cca0bd24d535818b7ad8987bafb2}{generer\+Rondelle} ()
+\item 
+void \hyperlink{group__inf2990_ga2796f6364ac61eb51c46c78a618a7d71}{reinitialiser\+Rondelle} ()
+\begin{DoxyCompactList}\small\item\em réinitialiser la partie \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga3da616bbad3869919e9305d223859f23}{reinitialiser\+Maillet} ()
+\item 
+void \hyperlink{group__inf2990_gab43fb6a77ce781ddeeed29a8254ba1e8}{reinitialiser\+Maillet\+Ordi} ()
+\item 
+void \hyperlink{group__inf2990_gaddf3202c90d4b3e58a556ab94028af78}{deplacer\+Maillet\+Ordi} (double dx, double dy)
+\item 
+void \hyperlink{group__inf2990_ga5d324c6b1bc9fddd359e74ab5ae23ffa}{deplacer\+Maillet} (int x, int y)
+\item 
+void \hyperlink{group__inf2990_gae41fde32a01b4b145eebca8525378344}{bouger\+Maillet} (int direction)
+\item 
+void \hyperlink{group__inf2990_ga3f308f1f0618fb3edef7186accad4396}{animation\+Jeu} ()
+\item 
+bool \hyperlink{group__inf2990_ga1f497ab3e2ca884e3ebfeb5f08952565}{est\+Dans\+Zone\+Gauche} (glm\+::vec3 point)
+\item 
+bool \hyperlink{group__inf2990_gac78c7296340f7664a438e004b9048e0e}{est\+Dans\+Zone\+Droit} (glm\+::vec3 point)
+\item 
+void {\bfseries joueur\+Virtuel} ()
+\item 
+void {\bfseries Configuration\+Joueur\+Virtuel} (int porfil\+Joueur\+Virtuel\mbox{[}$\,$\mbox{]})
+\item 
+bool {\bfseries collision\+Bonus} ()
+\item 
+bool {\bfseries collision\+Maillet} ()
+\item 
+bool {\bfseries collision\+Portail} ()
+\item 
+bool {\bfseries collision\+Muret} ()
+\item 
+bool {\bfseries collision\+Limite} ()
+\item 
+bool {\bfseries collision\+Maillet\+Ordi} ()
+\item 
+void \hyperlink{group__inf2990_ga0c7fde86ea2e4564b14fc205bbdf8525}{afficher\+Points\+De\+Controle} ()
+\item 
+void \hyperlink{group__inf2990_gadef2da0f27bce3a5808715335832ba2c}{tuer\+Points\+De\+Controle} ()
+\item 
+double \hyperlink{group__inf2990_ga6e85f6de5f7660ed131b2780491166ff}{get\+TableX} ()
+\item 
+double \hyperlink{group__inf2990_ga6bbbd59e5d4c750036200256f9a57eef}{get\+TableY} ()
+\item 
+double \hyperlink{group__inf2990_gaa472a6abe6291a66000b655dba8201cb}{get\+TableZ} ()
+\item 
+void \hyperlink{group__inf2990_ga950c419474679f1de8ce096bd513e23c}{set\+Orbite} (bool est\+Orbite)
+\begin{DoxyCompactList}\small\item\em Permet de modifier le mode de vue. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga6f6780ffb5677076209acde732e26737}{est\+Partie\+Rapide} ()
+\item 
+void \hyperlink{group__inf2990_ga862411f4d6a7ac2d3a2e0374dd13124d}{est\+Tournoi} ()
+\item 
+void \hyperlink{group__inf2990_ga977bcf12c8d66f3d18a8787213da436f}{est\+Edition} ()
+\item 
+void \hyperlink{group__inf2990_ga9d724d4ac436b86f1c75f392b38ccb3e}{est\+Mode\+Test} ()
+\item 
+void \hyperlink{group__inf2990_ga15b1c76837824b88400dc4b213095b3e}{pas\+Partie\+Rapide} ()
+\item 
+void \hyperlink{group__inf2990_ga5b1eb4351a61b2cb3e5c7a19257f5c53}{pas\+Tournoi} ()
+\item 
+void \hyperlink{group__inf2990_ga10bda14878170502b2528eb3f87b2a9b}{pas\+Edition} ()
+\item 
+void \hyperlink{group__inf2990_gaa2394e6b39c0864b0a9bfe11054f98f0}{pas\+Mode\+Test} ()
+\item 
+void \hyperlink{group__inf2990_ga676c397a6dc10491867ed96ffead58d8}{chrono} (int minutes, int secondes)
+\item 
+void {\bfseries nom\+Joueur\+Virtuel1} (std\+::string nom\+Joueur\+Virtuel1)
+\item 
+void {\bfseries nom\+Joueur\+Virtuel2} (std\+::string nom\+Joueur\+Virtuel2)
+\item 
+void {\bfseries nom\+Joueur\+Virtuel3} (std\+::string nom\+Joueur\+Virtuel3)
+\item 
+void {\bfseries nom\+Joueur\+Virtuel4} (std\+::string nom\+Joueur\+Virtuel4)
+\item 
+void \hyperlink{group__inf2990_ga2a87c30db1e22591ff83cad6ec9ebd75}{but\+Gauche} (int buts)
+\item 
+void \hyperlink{group__inf2990_gaed72a511eab5009fb4650d0ed654ddfe}{but\+Droit} (int buts)
+\item 
+void \hyperlink{group__inf2990_ga6756b39f1cc024d1d7cbaaacb6559201}{modifier\+Coordonner\+Objet\+Selectionner} ()
+\item 
+glm\+::vec3 \hyperlink{group__inf2990_ga766c9e0b01766a0b1d6a31f72a6be374}{obtenir\+Coordonner\+Objet\+Selectionner} ()
+\item 
+double \hyperlink{group__inf2990_ga3ee2a047012322149e2b47f0587f10e0}{obtenir\+CoordonnerX} ()
+\item 
+double \hyperlink{group__inf2990_ga5adfc6a10a0c10044c867fbeb56cb44a}{obtenir\+CoordonnerY} ()
+\item 
+void \hyperlink{group__inf2990_ga560d7b2f9720f2dd7dff9e1368c03a0c}{assigner\+Facteur\+Echelle} (double rot)
+\item 
+void \hyperlink{group__inf2990_gad865d6286f566314d3da8c62c0eb0dd1}{assigner\+Rotation} (double echelle)
+\item 
+double \hyperlink{group__inf2990_ga3f19bb893f277522c557e4aa3b6d2c06}{obtenir\+Rotation} ()
+\item 
+double \hyperlink{group__inf2990_ga4fbd7fe2636eae39564998c0e2b736ff}{obtenir\+Facteur\+Echelle} ()
+\item 
+void \hyperlink{group__inf2990_ga327800d707fe10f07f02532620cd4250}{afficher\+Buts} ()
+\begin{DoxyCompactList}\small\item\em Affiche les buts. \end{DoxyCompactList}\item 
+bool \hyperlink{group__inf2990_ga26bc5f3f7f0ee3323f3b5e1d13557a1a}{but\+Cote\+Gauche} ()
+\begin{DoxyCompactList}\small\item\em but cote gauche \end{DoxyCompactList}\item 
+bool \hyperlink{group__inf2990_ga224a237682d86912d44765d7934aeca0}{but\+Cote\+Droit} ()
+\begin{DoxyCompactList}\small\item\em but cote droit \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gaec75ccff1c5f4a9cc0abc8cc6daa8fcc}{non\+But\+Gauche} ()
+\begin{DoxyCompactList}\small\item\em Ramene la but gauche a false. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga2c628aba6b80204fc644cc153d60ece9}{non\+But\+Droit} ()
+\begin{DoxyCompactList}\small\item\em Ramene la but droit a false. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga0102132a6788ccfac0747d08a05ff38c}{son\+Rondele\+Maillet} ()
+\item 
+void \hyperlink{group__inf2990_ga136cb0d6214f9fd9df58bc712e06a50d}{son\+Rondele\+Bonus} ()
+\item 
+void \hyperlink{group__inf2990_gadc0bcea293dea0454c84764f9282b268}{son\+Rondele\+But} ()
+\item 
+void \hyperlink{group__inf2990_gad86a50f1d5c8d83d107a4b6965678f5c}{son\+Rondele\+Bordure} ()
+\item 
+void \hyperlink{group__inf2990_ga71283f5398d596ebf30565d3b425e6f0}{son\+Rondele\+Maillet\+Ordi} ()
+\item 
+void \hyperlink{group__inf2990_gae3ddae7f11c82780b310652e6bed7021}{son\+Rondele\+Portail} ()
+\item 
+void \hyperlink{group__inf2990_gae7dbbee44bb622ada04b59c394f845b3}{son\+Rondele\+Frappee} ()
+\item 
+void \hyperlink{group__inf2990_ga71469e30cb7413188c5fe93587bdc803}{son\+JeuF} ()
+\item 
+void \hyperlink{group__inf2990_ga576a749807db169f27511c0b9e2a1be0}{dechargement\+Son} ()
+\item 
+void \hyperlink{group__inf2990_ga89f56b8e67dd423fe66d4c6bd517b597}{son\+Rondele\+Muret} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_facade_modele}{Facade\+Modele} $\ast$ \hyperlink{group__inf2990_gaf52e6d65d1a911d3e1699fc30af97d38}{obtenir\+Instance} ()
+\begin{DoxyCompactList}\small\item\em Obtient l\textquotesingle{}instance unique de la classe. \end{DoxyCompactList}\item 
+static void \hyperlink{group__inf2990_gacbf0495fda26f5be37089470dc5f4372}{liberer\+Instance} ()
+\begin{DoxyCompactList}\small\item\em Libère l\textquotesingle{}instance unique de la classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries nombre\+Objet\+Selectioner} = 0\hypertarget{class_facade_modele_add48aaa582cb943caaa3fb1aa8ce61b0}{}\label{class_facade_modele_add48aaa582cb943caaa3fb1aa8ce61b0}
+
+\item 
+double {\bfseries posX}\hypertarget{class_facade_modele_aeb7bcdbd7c8576108e387c6f6058a7a9}{}\label{class_facade_modele_aeb7bcdbd7c8576108e387c6f6058a7a9}
+
+\item 
+double {\bfseries posY}\hypertarget{class_facade_modele_a8c895419fa15cf025fa630cceb68a75d}{}\label{class_facade_modele_a8c895419fa15cf025fa630cceb68a75d}
+
+\item 
+double {\bfseries posZ}\hypertarget{class_facade_modele_a8b40088f305e1c9567a9a89a63a4b9b1}{}\label{class_facade_modele_a8b40088f305e1c9567a9a89a63a4b9b1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe qui constitue une interface (une façade) sur l\textquotesingle{}ensemble du modèle et des classes qui le composent. 
+
+\begin{DoxyAuthor}{Author}
+Martin Bisson 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2007-\/02-\/20 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+D\+L\+L/\+Application/\hyperlink{_facade_modele_8h}{Facade\+Modele.\+h}\item 
+Sources/\+D\+L\+L/\+Application/\hyperlink{_facade_modele_8cpp}{Facade\+Modele.\+cpp}\end{DoxyCompactItemize}

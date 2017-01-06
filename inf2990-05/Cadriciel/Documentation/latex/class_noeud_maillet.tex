@@ -1,0 +1,64 @@
+\hypertarget{class_noeud_maillet}{}\section{Noeud\+Maillet Class Reference}
+\label{class_noeud_maillet}\index{Noeud\+Maillet@{Noeud\+Maillet}}
+
+
+Classe qui représente un exemple de noeud de l\textquotesingle{}arbre de rendu.  
+
+
+
+
+{\ttfamily \#include $<$Noeud\+Maillet.\+h$>$}
+
+Inheritance diagram for Noeud\+Maillet\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_noeud_maillet}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_ga70af0f07ba3a81cca52a11a06544690e}{Noeud\+Maillet} (const std\+::string \&type\+Noeud)
+\begin{DoxyCompactList}\small\item\em Constructeur à partir du type du noeud. \end{DoxyCompactList}\item 
+\hyperlink{group__inf2990_gae749189548a0559ee97e1734a6a98cfd}{Noeud\+Maillet} (const std\+::string \&type\+Noeud, double rayon, double angle)
+\begin{DoxyCompactList}\small\item\em Construteur expret pour les tests \+: \end{DoxyCompactList}\item 
+\hyperlink{group__inf2990_gae3b3415fbb46e49f9ad89393a5d2d58f}{$\sim$\+Noeud\+Maillet} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga2cac7bd1b5675337829a14740b6701c3}{afficher\+Concret} (const glm\+::mat4 \&vue\+Projection, const bool \&est\+Colore) const 
+\begin{DoxyCompactList}\small\item\em Affiche la rondelle. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga6db9aeab04e8e93e6482644f4270f3a7}{animer} (float temps)
+\begin{DoxyCompactList}\small\item\em Effectue l\textquotesingle{}animation de la rondelle. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga85e39056fab69eede8eeddc99c8ac690}{assigner\+Objet\+Rendu} (modele\+::\+Modele3D const $\ast$modele, opengl\+::\+V\+BO const $\ast$liste) override
+\begin{DoxyCompactList}\small\item\em Assigne le modèle3D et la liste d\textquotesingle{}affichage du noeud courant. \end{DoxyCompactList}\item 
+utilitaire\+::\+Cylindre\+Englobant {\bfseries get\+Boite\+Englobante} ()
+\item 
+virtual void \hyperlink{group__inf2990_gaaee0a63e30e8bb567aa84d3ab2d58645}{accepter} (\hyperlink{class_visiteur_abstrait}{Visiteur\+Abstrait} $\ast$visiteur)
+\begin{DoxyCompactList}\small\item\em Accepter visiteur. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gaf7e5a3019e340902a2a059878df9df7c}{set\+Rayon\+Maillet} (double rayon)
+\begin{DoxyCompactList}\small\item\em Modifie le rayon. \end{DoxyCompactList}\item 
+double \hyperlink{group__inf2990_ga843cd14ec4a427af160fade12513fbe6}{get\+Rayon\+Maillet} ()
+\begin{DoxyCompactList}\small\item\em Obtient le rayon. \end{DoxyCompactList}\item 
+double \hyperlink{group__inf2990_gab20695df52753e694796c00ba625f96c}{get\+Angle\+Rotation} ()
+\begin{DoxyCompactList}\small\item\em Obtient l\textquotesingle{}angle de rotation. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gaefeaceef9c0d8dee648eaa0de859af85}{set\+Angle\+Rotation} (double angle\+Rotation)
+\begin{DoxyCompactList}\small\item\em Modifie l\textquotesingle{}angle de rotation. \end{DoxyCompactList}\item 
+double {\bfseries get\+Masse} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe qui représente un exemple de noeud de l\textquotesingle{}arbre de rendu. 
+
+\begin{DoxyAuthor}{Author}
+Equipe 05 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2016-\/09-\/09 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_maillet_8h}{Noeud\+Maillet.\+h}\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_maillet_8cpp}{Noeud\+Maillet.\+cpp}\end{DoxyCompactItemize}

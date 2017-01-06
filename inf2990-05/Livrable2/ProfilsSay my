@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<JouerVirt xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <nom>Say my</nom>
+  <vitesse>10</vitesse>
+  <passivite>5</passivite>
+</JouerVirt>

@@ -1,0 +1,52 @@
+\hypertarget{class_noeud_but}{}\section{Noeud\+But Class Reference}
+\label{class_noeud_but}\index{Noeud\+But@{Noeud\+But}}
+
+
+Classe qui représente un exemple de noeud de l\textquotesingle{}arbre de rendu.  
+
+
+
+
+{\ttfamily \#include $<$Noeud\+But.\+h$>$}
+
+Inheritance diagram for Noeud\+But\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_noeud_but}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_gae30f7d30bf1b60de530aff8d2106e3fa}{Noeud\+But} (const std\+::string \&type\+Noeud)
+\begin{DoxyCompactList}\small\item\em Constructeur à partir du type du noeud. \end{DoxyCompactList}\item 
+\hyperlink{group__inf2990_gafb2c4fb7d9437c2159128e7e18838dcb}{$\sim$\+Noeud\+But} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_gaedab157e989a79be526f31e1c2763a64}{afficher\+Concret} (const glm\+::mat4 \&vue\+Projection, const bool \&est\+Colore) const 
+\begin{DoxyCompactList}\small\item\em Affiche le but. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_gaf8748a8c40e5445c09b97a3bdd073dcc}{animer} (float temps)
+\begin{DoxyCompactList}\small\item\em Effectue l\textquotesingle{}animation du but. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga49b6f9d315f61eeaf4f379ca56aa204f}{accepter} (\hyperlink{class_visiteur_abstrait}{Visiteur\+Abstrait} $\ast$visiteur)
+\begin{DoxyCompactList}\small\item\em Accepte visiteur. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga2667e34714e65fbbfcbfbfad90b65e0f}{assigner\+Objet\+Rendu} (modele\+::\+Modele3D const $\ast$modele, opengl\+::\+V\+BO const $\ast$liste) override
+\begin{DoxyCompactList}\small\item\em Assigne le modèle3D et la liste d\textquotesingle{}affichage du noeud courant. \end{DoxyCompactList}\item 
+utilitaire\+::\+Boite\+Englobante \hyperlink{group__inf2990_gae39ae35cb02a912ef629648ebb52adbd}{get\+Boite\+Englobante} ()
+\begin{DoxyCompactList}\small\item\em Obtient la boite englobante du but. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe qui représente un exemple de noeud de l\textquotesingle{}arbre de rendu. 
+
+\begin{DoxyAuthor}{Author}
+Jackie Phung 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2016-\/09-\/09 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_but_8h}{Noeud\+But.\+h}\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_but_8cpp}{Noeud\+But.\+cpp}\end{DoxyCompactItemize}

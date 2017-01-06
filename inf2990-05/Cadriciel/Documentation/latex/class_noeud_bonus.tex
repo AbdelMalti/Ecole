@@ -1,0 +1,71 @@
+\hypertarget{class_noeud_bonus}{}\section{Noeud\+Bonus Class Reference}
+\label{class_noeud_bonus}\index{Noeud\+Bonus@{Noeud\+Bonus}}
+
+
+Classe qui représente un exemple de noeud de l\textquotesingle{}arbre de rendu.  
+
+
+
+
+{\ttfamily \#include $<$Noeud\+Bonus.\+h$>$}
+
+Inheritance diagram for Noeud\+Bonus\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_noeud_bonus}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_gaee3f4961b8395a671e8591b29daaa097}{Noeud\+Bonus} (const std\+::string \&type\+Noeud)
+\begin{DoxyCompactList}\small\item\em Constructeur à partir du type du noeud. \end{DoxyCompactList}\item 
+\hyperlink{group__inf2990_gaad98c119ae9efc3d809757200dac7820}{Noeud\+Bonus} (\hyperlink{class_noeud_bonus}{Noeud\+Bonus} $\ast$bonus\+Copier)
+\begin{DoxyCompactList}\small\item\em Construteur copie de bonus. \end{DoxyCompactList}\item 
+\hyperlink{group__inf2990_ga8f51e2023d576c5c2afab6fce6bc387d}{$\sim$\+Noeud\+Bonus} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_gaa2435b70143e9b4ad60e87b9de6da9a3}{afficher\+Concret} (const glm\+::mat4 \&vue\+Projection, const bool \&est\+Colore) const 
+\begin{DoxyCompactList}\small\item\em Affiche le bonus. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga9d505136d7f6446c2df14909082f1ca8}{animer} (float temps)
+\begin{DoxyCompactList}\small\item\em Effectue l\textquotesingle{}animation du bonus. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga0440dba01a9158c813d987adcba86a6e}{assigner\+Objet\+Rendu} (modele\+::\+Modele3D const $\ast$modele, opengl\+::\+V\+BO const $\ast$liste) override
+\begin{DoxyCompactList}\small\item\em Assigne le modèle3D et la liste d\textquotesingle{}affichage du noeud courant. \end{DoxyCompactList}\item 
+utilitaire\+::\+Cylindre\+Englobant {\bfseries get\+Boite\+Englobante} ()
+\item 
+virtual void \hyperlink{group__inf2990_ga65a81f7752a4f04de85e84a12ebd5ab9}{accepter} (\hyperlink{class_visiteur_abstrait}{Visiteur\+Abstrait} $\ast$visiteur)
+\begin{DoxyCompactList}\small\item\em Accepte visiteur. \end{DoxyCompactList}\item 
+void {\bfseries set\+Rayon\+Bonus} (double rayon)
+\item 
+double {\bfseries get\+Rayon\+Bonus} ()
+\item 
+double {\bfseries get\+Angle\+Rotation} ()
+\item 
+void {\bfseries set\+Angle\+Rotation} (double angle)
+\item 
+G\+Lubyte \hyperlink{group__inf2990_gaa96fee82f8137488a9ad671f7d94960b}{get\+Couleur1} ()
+\begin{DoxyCompactList}\small\item\em Obtenir la composante en x de la couleur. \end{DoxyCompactList}\item 
+G\+Lubyte \hyperlink{group__inf2990_ga753af58eb5d148ba4aa71564494e61b9}{get\+Couleur2} ()
+\begin{DoxyCompactList}\small\item\em Obtenir la composante en y de la couleur. \end{DoxyCompactList}\item 
+G\+Lubyte \hyperlink{group__inf2990_gac8c722b13e00f3a6cdc5adb765e8fce6}{get\+Couleur3} ()
+\begin{DoxyCompactList}\small\item\em Obtenir la composante en z de la couleur. \end{DoxyCompactList}\item 
+bool \hyperlink{group__inf2990_ga4590f8386c7092b02339a86ca27eed08}{tester\+Selection} (G\+Lubyte Objet\+Colore\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Permet de définir des couleurs au objets pour la sélection par couleur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe qui représente un exemple de noeud de l\textquotesingle{}arbre de rendu. 
+
+\begin{DoxyAuthor}{Author}
+Jackie Phung 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2016-\/09-\/09 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_bonus_8h}{Noeud\+Bonus.\+h}\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_bonus_8cpp}{Noeud\+Bonus.\+cpp}\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_maillet_8cpp}{Noeud\+Maillet.\+cpp}\end{DoxyCompactItemize}

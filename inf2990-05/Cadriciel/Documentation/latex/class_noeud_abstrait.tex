@@ -1,0 +1,259 @@
+\hypertarget{class_noeud_abstrait}{}\section{Noeud\+Abstrait Class Reference}
+\label{class_noeud_abstrait}\index{Noeud\+Abstrait@{Noeud\+Abstrait}}
+
+
+Classe de base du patron composite utilisée pour créer l\textquotesingle{}arbre de rendu.  
+
+
+
+
+{\ttfamily \#include $<$Noeud\+Abstrait.\+h$>$}
+
+Inheritance diagram for Noeud\+Abstrait\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{class_noeud_abstrait}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_ga1d1340ee36824e0c6013e65a1306d8f3}{Noeud\+Abstrait} (const std\+::string \&type=std\+::string\{\char`\"{}\char`\"{}\})
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+virtual \hyperlink{group__inf2990_ga0ab3f7ab838e8349113da5074abcdc3a}{$\sim$\+Noeud\+Abstrait} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+\hyperlink{class_noeud_abstrait}{Noeud\+Abstrait} $\ast$ \hyperlink{group__inf2990_gaa2ac8c4cd02d88c312b92c65e07ed6d9}{obtenir\+Parent} ()
+\begin{DoxyCompactList}\small\item\em Obtient le parent de ce noeud. \end{DoxyCompactList}\item 
+const \hyperlink{class_noeud_abstrait}{Noeud\+Abstrait} $\ast$ \hyperlink{group__inf2990_gaf063d208bc4764b1fd2c4e76ec0469b9}{obtenir\+Parent} () const 
+\begin{DoxyCompactList}\small\item\em Obtient le parent de ce noeud (version constante). \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga7787ab59ecc1e6119287459a7154f307}{assigner\+Parent} (\hyperlink{class_noeud_abstrait}{Noeud\+Abstrait} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Assigne le parent de ce noeud. \end{DoxyCompactList}\item 
+glm\+::vec3 \hyperlink{group__inf2990_ga5cbcb84daf4f0565e0355272123f2bdb}{obtenir\+Position\+Relative} () const 
+\begin{DoxyCompactList}\small\item\em Obtient la position relative du noeud. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga8386fa98c98908b4d64dd50fb9ba578e}{assigner\+Position\+Relative} (const glm\+::vec3 \&position\+Relative)
+\begin{DoxyCompactList}\small\item\em Assigne la position relative du noeud. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{group__inf2990_ga2df7c53ab456cc88bce73f7eb913e3e6}{obtenir\+Type} () const 
+\begin{DoxyCompactList}\small\item\em Obtient le type du noeud. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gad5205d1e1b63fb66175a8580261d5eea}{assigner\+Affiche} (bool affiche)
+\begin{DoxyCompactList}\small\item\em Écrit l\textquotesingle{}état de l\textquotesingle{}affichage du du noeud. \end{DoxyCompactList}\item 
+bool \hyperlink{group__inf2990_ga07fc02e86d59ccd2680f9e5f5b8e373d}{est\+Affiche} () const 
+\begin{DoxyCompactList}\small\item\em Vérifie si le noeud se fait afficher. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga0f39647390d357d8662a870f0c76242c}{assigner\+Selection} (bool selectionne)
+\begin{DoxyCompactList}\small\item\em Écrit l\textquotesingle{}état de la sélection du noeud. \end{DoxyCompactList}\item 
+bool \hyperlink{group__inf2990_ga8fb7a3313ce4d361ef7ec8e45ba8add5}{est\+Selectionne} () const 
+\begin{DoxyCompactList}\small\item\em Vérifie si le noeud est sélectionné. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga397add0bac7ec3b842598a2085990b7d}{assigner\+Est\+Selectionnable} (bool selectionnable)
+\begin{DoxyCompactList}\small\item\em Écrit si le noeud peut être sélectionné ou non. \end{DoxyCompactList}\item 
+bool \hyperlink{group__inf2990_gaa3f3a34571af62de0da5db2d8f54f690}{est\+Selectionnable} () const 
+\begin{DoxyCompactList}\small\item\em Vérifie si le noeud est sélectionnable. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gabb7f3756a4094dc588690126ec0703d3}{assigner\+Est\+Enregistrable} (bool enregistrable)
+\begin{DoxyCompactList}\small\item\em Écrit si le noeud peut être enregistré ou non. \end{DoxyCompactList}\item 
+bool \hyperlink{group__inf2990_ga6a6af3639f1b4e3e33a126703376dcec}{est\+Enregistrable} () const 
+\begin{DoxyCompactList}\small\item\em Vérifie si le noeud est enregistrable. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga1f533acce98fbad7fa82758ccaea55ff}{assigner\+Objet\+Rendu} (modele\+::\+Modele3D const $\ast$modele, opengl\+::\+V\+BO const $\ast$liste)
+\begin{DoxyCompactList}\small\item\em Assigne le modèle3D et la liste d\textquotesingle{}affichage du noeud courant. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{group__inf2990_gad854800087fd6c13f1a63589caefb41d}{calculer\+Profondeur} () const 
+\begin{DoxyCompactList}\small\item\em Calcule la profondeur de l\textquotesingle{}arbre sous le noeud courant. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga55435ee83860c6a2101334ba67bbd9b6}{vider} ()
+\begin{DoxyCompactList}\small\item\em Vide le noeud de ses enfants. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga2ab3dc520026d1ad77aa848981688bfd}{effacer} (const \hyperlink{class_noeud_abstrait}{Noeud\+Abstrait} $\ast$noeud)
+\begin{DoxyCompactList}\small\item\em Efface le noeud passé en paramètre. \end{DoxyCompactList}\item 
+virtual const \hyperlink{class_noeud_abstrait}{Noeud\+Abstrait} $\ast$ \hyperlink{group__inf2990_gaeda0df98faf404765d985fcde60fb924}{chercher} (const std\+::string \&type\+Noeud) const 
+\begin{DoxyCompactList}\small\item\em Cherche un noeud par le type (sur un noeud constant). \end{DoxyCompactList}\item 
+virtual \hyperlink{class_noeud_abstrait}{Noeud\+Abstrait} $\ast$ \hyperlink{group__inf2990_ga0868ae108165b071f6c8a68a7265c770}{chercher} (const std\+::string \&type\+Noeud)
+\begin{DoxyCompactList}\small\item\em Cherche un noeud par le type. \end{DoxyCompactList}\item 
+virtual const \hyperlink{class_noeud_abstrait}{Noeud\+Abstrait} $\ast$ \hyperlink{group__inf2990_gac334b078c318e39a065b85572778bf13}{chercher} (unsigned int indice) const 
+\begin{DoxyCompactList}\small\item\em Cherche un noeud enfant selon l\textquotesingle{}indice (sur un noeud constant). \end{DoxyCompactList}\item 
+virtual \hyperlink{class_noeud_abstrait}{Noeud\+Abstrait} $\ast$ \hyperlink{group__inf2990_ga13f7e9a637f7439b1a0cec0c49f6fa88}{chercher} (unsigned int indice)
+\begin{DoxyCompactList}\small\item\em Cherche un noeud enfant selon l\textquotesingle{}indice. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{group__inf2990_ga31dd45110fcb977a956a32b918f71819}{ajouter} (\hyperlink{class_noeud_abstrait}{Noeud\+Abstrait} $\ast$enfant)
+\begin{DoxyCompactList}\small\item\em Ajoute un noeud enfant. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{group__inf2990_gad5a99959e905fc2d9f0fef16a02546a2}{obtenir\+Nombre\+Enfants} () const 
+\begin{DoxyCompactList}\small\item\em Obtient le nombre d\textquotesingle{}enfants du noeud. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga2516eef94f98d4951baff6fd45020725}{inverser\+Selection} ()
+\begin{DoxyCompactList}\small\item\em Changer la sélection du noeud. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_gaf6440c1b4ab6861f0ace6ba410c1fc84}{effacer\+Selection} ()
+\begin{DoxyCompactList}\small\item\em Efface les enfants sélectionnés. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_gaa9b1fa06dad2695ea6870411c62652b3}{selectionner\+Tout} ()
+\begin{DoxyCompactList}\small\item\em Sélectionne tous les enfants de même que le noeud. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga4f942bd122fc3402537ecac737c5248a}{deselectionner\+Tout} ()
+\begin{DoxyCompactList}\small\item\em Désélectionne tous les enfants de même que le noeud. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{group__inf2990_gae7c702b865babd20ddd30dd776adc82b}{selection\+Existe} () const 
+\begin{DoxyCompactList}\small\item\em Vérifier si le noeud ou un de ses enfants est sélectionné. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga13a97383c2081b405fc2e0d97cff80df}{changer\+Mode\+Polygones} (bool est\+Force)
+\begin{DoxyCompactList}\small\item\em Change le mode d\textquotesingle{}affichage des polygones. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga726d9d0a524939f405aeeac3fbd06666}{assigner\+Mode\+Polygones} (G\+Lenum mode\+Polygones)
+\begin{DoxyCompactList}\small\item\em Assigne le mode d\textquotesingle{}affichage des polygones. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_gafaca3ab3de44d981730488b3327374cf}{afficher} (const glm\+::mat4 \&vue\+Projection, const bool \&est\+Colore) const 
+\begin{DoxyCompactList}\small\item\em Affiche le noeud. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga78823818add1ab23bb7a2d297761b63a}{afficher\+Concret} (const glm\+::mat4 \&vue\+Projection, const bool \&est\+Colore) const 
+\begin{DoxyCompactList}\small\item\em Affiche le noeud de manière concrète. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_gadc6ebe69894dbb682fdd0ecb1b6c11e9}{animer} (float dt)
+\begin{DoxyCompactList}\small\item\em Anime le noeud. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_gafd68a72abab118a8809a44c7b73a0e1d}{accepter} (\hyperlink{class_visiteur_abstrait}{Visiteur\+Abstrait} $\ast$visiteur)
+\begin{DoxyCompactList}\small\item\em accepter le noeud \end{DoxyCompactList}\item 
+glm\+::vec3 {\bfseries get\+Centre\+De\+Rotation} ()
+\item 
+void {\bfseries set\+Centre\+De\+Rotation} (glm\+::vec3 centre\+De\+Rotation)
+\item 
+double {\bfseries get\+Angle\+Rotation} ()
+\item 
+void {\bfseries set\+Angle\+Rotation} (double angle\+Rotation)
+\item 
+double {\bfseries get\+Facteur\+Echelle} ()
+\item 
+void {\bfseries set\+Facteur\+Echelle} (double facteur\+Echelle)
+\item 
+virtual void {\bfseries set\+Couleur\+Sel} ()
+\item 
+float \hyperlink{group__inf2990_ga0a551707a371d6d6644e2451801830bc}{get\+Coefficient\+Friction} ()
+\begin{DoxyCompactList}\small\item\em Decalration des fonctions pour la friction, acceleration et le rebond. \end{DoxyCompactList}\item 
+void {\bfseries set\+Coefficient\+Friction} (float friction)
+\item 
+void {\bfseries set\+Vitesse} (double vitesse)
+\item 
+double {\bfseries get\+Vitesse} ()
+\item 
+void {\bfseries set\+Acceleration} (double acceleration)
+\item 
+double {\bfseries get\+Acceleration} ()
+\item 
+void {\bfseries set\+Coefficient\+Rebond} (double rebond)
+\item 
+double {\bfseries get\+Coefficient\+Rebond} ()
+\item 
+void {\bfseries set\+Temps\+Initial} (double nouveau\+Temps\+Initial)
+\item 
+double {\bfseries get\+Temps\+Initial} ()
+\item 
+void {\bfseries set\+Position\+InitialX} (double nouveauX)
+\item 
+double {\bfseries get\+Position\+InitialX} ()
+\item 
+void {\bfseries set\+Position\+InitialY} (double nouveauY)
+\item 
+double {\bfseries get\+Position\+InitialY} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G\+Lubyte {\bfseries coul\+Sel\+\_\+} \mbox{[}3\mbox{]}\hypertarget{class_noeud_abstrait_ab0d55001f006d073f9b72ff08c9281e1}{}\label{class_noeud_abstrait_ab0d55001f006d073f9b72ff08c9281e1}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bfseries cpt\+Selection\+\_\+} =0
+\item 
+static int {\bfseries compteur\+B\+\_\+} = 0
+\item 
+static int {\bfseries compteur\+P\+\_\+} = 0
+\item 
+static int {\bfseries compteur\+Ma\+\_\+} = 0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{class_noeud_abstrait_ad53da47a60f4b4fbbd400234cbdcb06b}{type\+\_\+}\hypertarget{class_noeud_abstrait_ad53da47a60f4b4fbbd400234cbdcb06b}{}\label{class_noeud_abstrait_ad53da47a60f4b4fbbd400234cbdcb06b}
+
+\begin{DoxyCompactList}\small\item\em Type du noeud. \end{DoxyCompactList}\item 
+G\+Lenum \hyperlink{class_noeud_abstrait_aa2b57eeb848bc8cb48562788daf81d3e}{mode\+Polygones\+\_\+} \{ G\+L\+\_\+\+F\+I\+LL \}\hypertarget{class_noeud_abstrait_aa2b57eeb848bc8cb48562788daf81d3e}{}\label{class_noeud_abstrait_aa2b57eeb848bc8cb48562788daf81d3e}
+
+\begin{DoxyCompactList}\small\item\em Mode d\textquotesingle{}affichage des polygones. \end{DoxyCompactList}\item 
+glm\+::mat4 \hyperlink{class_noeud_abstrait_ac191838670705758d8ec182e19d6a186}{transformation\+Relative\+\_\+}\hypertarget{class_noeud_abstrait_ac191838670705758d8ec182e19d6a186}{}\label{class_noeud_abstrait_ac191838670705758d8ec182e19d6a186}
+
+\begin{DoxyCompactList}\small\item\em Transformation relative du noeud. \end{DoxyCompactList}\item 
+bool \hyperlink{class_noeud_abstrait_a20af11e8041b0af8a34b6f041bb24c7f}{affiche\+\_\+} \{ true \}\hypertarget{class_noeud_abstrait_a20af11e8041b0af8a34b6f041bb24c7f}{}\label{class_noeud_abstrait_a20af11e8041b0af8a34b6f041bb24c7f}
+
+\begin{DoxyCompactList}\small\item\em Vrai si on doit afficher le noeud. \end{DoxyCompactList}\item 
+bool \hyperlink{class_noeud_abstrait_a7b2d2410f947987765a9ef41fedcc703}{selectionne\+\_\+} \{ false \}\hypertarget{class_noeud_abstrait_a7b2d2410f947987765a9ef41fedcc703}{}\label{class_noeud_abstrait_a7b2d2410f947987765a9ef41fedcc703}
+
+\begin{DoxyCompactList}\small\item\em Sélection du noeud. \end{DoxyCompactList}\item 
+bool \hyperlink{class_noeud_abstrait_a2e5d12f2a106f410e149263fa72a530f}{selectionnable\+\_\+} \{ true \}\hypertarget{class_noeud_abstrait_a2e5d12f2a106f410e149263fa72a530f}{}\label{class_noeud_abstrait_a2e5d12f2a106f410e149263fa72a530f}
+
+\begin{DoxyCompactList}\small\item\em Vrai si le noeud est sélectionnable. \end{DoxyCompactList}\item 
+bool \hyperlink{class_noeud_abstrait_aa4b43e83161e8650b8810c8e29f0c985}{enregistrable\+\_\+} \{ true \}\hypertarget{class_noeud_abstrait_aa4b43e83161e8650b8810c8e29f0c985}{}\label{class_noeud_abstrait_aa4b43e83161e8650b8810c8e29f0c985}
+
+\begin{DoxyCompactList}\small\item\em Détermine si l\textquotesingle{}objet peut être sauvegardé en X\+ML. \end{DoxyCompactList}\item 
+\hyperlink{class_noeud_abstrait}{Noeud\+Abstrait} $\ast$ \hyperlink{class_noeud_abstrait_a002558def0146fea8c413c7928b962a1}{parent\+\_\+} \{ nullptr \}\hypertarget{class_noeud_abstrait_a002558def0146fea8c413c7928b962a1}{}\label{class_noeud_abstrait_a002558def0146fea8c413c7928b962a1}
+
+\begin{DoxyCompactList}\small\item\em Pointeur vers le parent. \end{DoxyCompactList}\item 
+double \hyperlink{class_noeud_abstrait_af1874c6f5d4c0fb0eabac0e9046be2b8}{facteur\+Echelle\+\_\+}\hypertarget{class_noeud_abstrait_af1874c6f5d4c0fb0eabac0e9046be2b8}{}\label{class_noeud_abstrait_af1874c6f5d4c0fb0eabac0e9046be2b8}
+
+\begin{DoxyCompactList}\small\item\em Facteur d\textquotesingle{}echelle. \end{DoxyCompactList}\item 
+double \hyperlink{class_noeud_abstrait_acb1cd73f3ed3d9bd4b4f8f1bccd4a424}{rayon\+\_\+}\hypertarget{class_noeud_abstrait_acb1cd73f3ed3d9bd4b4f8f1bccd4a424}{}\label{class_noeud_abstrait_acb1cd73f3ed3d9bd4b4f8f1bccd4a424}
+
+\begin{DoxyCompactList}\small\item\em rayon du modele \end{DoxyCompactList}\item 
+bool \hyperlink{class_noeud_abstrait_a42d348c44d4a674d80a3d9e009d3db6c}{est\+Modifie\+\_\+}\hypertarget{class_noeud_abstrait_a42d348c44d4a674d80a3d9e009d3db6c}{}\label{class_noeud_abstrait_a42d348c44d4a674d80a3d9e009d3db6c}
+
+\begin{DoxyCompactList}\small\item\em indique si le noeud a subit une modification de sa position ou de sa forme \end{DoxyCompactList}\item 
+int {\bfseries compteur\+Selection\+\_\+}\hypertarget{class_noeud_abstrait_a863774dac7d789e62acb28af884e78ec}{}\label{class_noeud_abstrait_a863774dac7d789e62acb28af884e78ec}
+
+\item 
+float \hyperlink{class_noeud_abstrait_ac2f965a5eb1e7d6b0fdde5edee89da42}{coefficient\+Friction\+\_\+}\hypertarget{class_noeud_abstrait_ac2f965a5eb1e7d6b0fdde5edee89da42}{}\label{class_noeud_abstrait_ac2f965a5eb1e7d6b0fdde5edee89da42}
+
+\begin{DoxyCompactList}\small\item\em Varaible pour le rebond, acceleration et friction. \end{DoxyCompactList}\item 
+double {\bfseries vitesse\+Initial\+\_\+}\hypertarget{class_noeud_abstrait_a9777b1f9a5e0e2d80e43bda32fe62471}{}\label{class_noeud_abstrait_a9777b1f9a5e0e2d80e43bda32fe62471}
+
+\item 
+double {\bfseries acceleration\+\_\+}\hypertarget{class_noeud_abstrait_a8f17170ccdfaf971d50ca66b24b057ab}{}\label{class_noeud_abstrait_a8f17170ccdfaf971d50ca66b24b057ab}
+
+\item 
+double {\bfseries coefficient\+Rebond\+\_\+}\hypertarget{class_noeud_abstrait_a532405672bb9e1d5cc5ce4beec0c4ea7}{}\label{class_noeud_abstrait_a532405672bb9e1d5cc5ce4beec0c4ea7}
+
+\item 
+double {\bfseries temps\+Initial\+\_\+} = 0\hypertarget{class_noeud_abstrait_a9e599f814627bdc143027e342eef606d}{}\label{class_noeud_abstrait_a9e599f814627bdc143027e342eef606d}
+
+\item 
+double {\bfseries position\+Initial\+X\+\_\+} = 0\hypertarget{class_noeud_abstrait_a831c61f8bf704dbb8eab1deb3b08f4c3}{}\label{class_noeud_abstrait_a831c61f8bf704dbb8eab1deb3b08f4c3}
+
+\item 
+double {\bfseries position\+Initial\+Y\+\_\+} = 0\hypertarget{class_noeud_abstrait_a6bfbe7206f4c4f117d8bc581fd6729ef}{}\label{class_noeud_abstrait_a6bfbe7206f4c4f117d8bc581fd6729ef}
+
+\item 
+modele\+::\+Modele3D const $\ast$ \hyperlink{class_noeud_abstrait_abc3dc8e24578214b7c6081be3246645e}{modele\+\_\+}\hypertarget{class_noeud_abstrait_abc3dc8e24578214b7c6081be3246645e}{}\label{class_noeud_abstrait_abc3dc8e24578214b7c6081be3246645e}
+
+\begin{DoxyCompactList}\small\item\em Modèle 3D correspondant à ce noeud. \end{DoxyCompactList}\item 
+opengl\+::\+V\+BO const $\ast$ \hyperlink{class_noeud_abstrait_ae53668f6c4df669a0923a16b3cb84f83}{vbo\+\_\+}\hypertarget{class_noeud_abstrait_ae53668f6c4df669a0923a16b3cb84f83}{}\label{class_noeud_abstrait_ae53668f6c4df669a0923a16b3cb84f83}
+
+\begin{DoxyCompactList}\small\item\em Storage pour le dessin du modèle. \end{DoxyCompactList}\item 
+glm\+::vec3 {\bfseries centre\+De\+Rotation\+\_\+}\hypertarget{class_noeud_abstrait_add857ba3bcc11a2f3edccf609cf2ebef}{}\label{class_noeud_abstrait_add857ba3bcc11a2f3edccf609cf2ebef}
+
+\item 
+double {\bfseries angle\+Rotation\+\_\+}\hypertarget{class_noeud_abstrait_a5a6d20aed9aae8c016e7e428a10d252b}{}\label{class_noeud_abstrait_a5a6d20aed9aae8c016e7e428a10d252b}
+
+\item 
+std\+::vector$<$ G\+Lubyte $>$ \hyperlink{class_noeud_abstrait_a1706d7531d28aae197bb3bc5a1623936}{couleur\+De\+Selection\+\_\+}\hypertarget{class_noeud_abstrait_a1706d7531d28aae197bb3bc5a1623936}{}\label{class_noeud_abstrait_a1706d7531d28aae197bb3bc5a1623936}
+
+\begin{DoxyCompactList}\small\item\em Attribut pour la selection unique d\textquotesingle{}objet. \end{DoxyCompactList}\item 
+double {\bfseries pos\+X\+\_\+}\hypertarget{class_noeud_abstrait_a0b8aa7bffb0e0fd6edd70befac3ce2d6}{}\label{class_noeud_abstrait_a0b8aa7bffb0e0fd6edd70befac3ce2d6}
+
+\item 
+double {\bfseries pos\+Y\+\_\+}\hypertarget{class_noeud_abstrait_accceb9a305f10053c204f6fb191ae6b2}{}\label{class_noeud_abstrait_accceb9a305f10053c204f6fb191ae6b2}
+
+\item 
+double {\bfseries pos\+Z\+\_\+}\hypertarget{class_noeud_abstrait_afcdf60ca4973b84442004bdcf87028b1}{}\label{class_noeud_abstrait_afcdf60ca4973b84442004bdcf87028b1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe de base du patron composite utilisée pour créer l\textquotesingle{}arbre de rendu. 
+
+Cette classe abstraite comprend l\textquotesingle{}interface de base que doivent implanter tous les noeuds pouvant être présent dans l\textquotesingle{}arbre de rendu.
+
+\begin{DoxyAuthor}{Author}
+D\+G\+I-\/2990 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2007-\/01-\/24 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_abstrait_8h}{Noeud\+Abstrait.\+h}\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_abstrait_8cpp}{Noeud\+Abstrait.\+cpp}\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_bonus_8cpp}{Noeud\+Bonus.\+cpp}\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_muret_8cpp}{Noeud\+Muret.\+cpp}\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_portail_8cpp}{Noeud\+Portail.\+cpp}\end{DoxyCompactItemize}

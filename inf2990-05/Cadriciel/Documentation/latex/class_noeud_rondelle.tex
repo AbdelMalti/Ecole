@@ -1,0 +1,75 @@
+\hypertarget{class_noeud_rondelle}{}\section{Noeud\+Rondelle Class Reference}
+\label{class_noeud_rondelle}\index{Noeud\+Rondelle@{Noeud\+Rondelle}}
+
+
+Classe qui représente un exemple de noeud de l\textquotesingle{}arbre de rendu.  
+
+
+
+
+{\ttfamily \#include $<$Noeud\+Rondelle.\+h$>$}
+
+Inheritance diagram for Noeud\+Rondelle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_noeud_rondelle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_ga34a329c95e92769fb7ee559f9d8190ee}{Noeud\+Rondelle} (const std\+::string \&type\+Noeud)
+\begin{DoxyCompactList}\small\item\em Constructeur à partir du type du noeud. \end{DoxyCompactList}\item 
+\hyperlink{group__inf2990_ga72fbc525724f54469d00c55052403581}{$\sim$\+Noeud\+Rondelle} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_gaa8fd84f719287e019ce33bf867b0d089}{afficher\+Concret} (const glm\+::mat4 \&vue\+Projection, const bool \&est\+Colore) const 
+\begin{DoxyCompactList}\small\item\em Affiche la rondelle. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga016689cb1c1968037902ae0013397bff}{animer} (float temps)
+\begin{DoxyCompactList}\small\item\em Effectue l\textquotesingle{}animation de la rondelle. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga6806c8f683c987319ee74f3bea86124f}{assigner\+Objet\+Rendu} (modele\+::\+Modele3D const $\ast$modele, opengl\+::\+V\+BO const $\ast$liste) override
+\begin{DoxyCompactList}\small\item\em Assigne le modèle3D et la liste d\textquotesingle{}affichage du noeud courant. \end{DoxyCompactList}\item 
+utilitaire\+::\+Cylindre\+Englobant {\bfseries get\+Boite\+Englobante} ()
+\item 
+virtual void \hyperlink{group__inf2990_ga3597dc483659cba1d9cecbeb04cf5a33}{accepter} (\hyperlink{class_visiteur_abstrait}{Visiteur\+Abstrait} $\ast$visiteur)
+\begin{DoxyCompactList}\small\item\em Accepter visiteur. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gaa0b49dc9d276315f0fdeabec4016545e}{set\+Rayon\+Rondelle} (double rayon)
+\begin{DoxyCompactList}\small\item\em Modifie le rayon. \end{DoxyCompactList}\item 
+double \hyperlink{group__inf2990_ga61decf370b961f5cddfee18fb25a646c}{get\+Rayon\+Rondelle} ()
+\begin{DoxyCompactList}\small\item\em Obtient le rayon. \end{DoxyCompactList}\item 
+double \hyperlink{group__inf2990_ga1483cc23864ac57495653f0fcfdc7b34}{get\+Angle\+Rotation} ()
+\begin{DoxyCompactList}\small\item\em Obtient l\textquotesingle{}angle de rotation. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gabbf35ad6e65ccdf69027272bb0fdf69d}{set\+Angle\+Rotation} (double angle\+Rotation)
+\begin{DoxyCompactList}\small\item\em Modifie l\textquotesingle{}angle de rotation. \end{DoxyCompactList}\item 
+double {\bfseries get\+Masse} ()
+\item 
+void {\bfseries set\+Direction\+Rondelle} (glm\+::vec3 dir)
+\item 
+glm\+::vec3 {\bfseries get\+Direction} ()
+\item 
+bool \hyperlink{group__inf2990_ga567e15614087c41e7461e12e71e93e56}{get\+Est\+But\+Gauche} ()
+\begin{DoxyCompactList}\small\item\em Obtenir si but gauche. \end{DoxyCompactList}\item 
+bool \hyperlink{group__inf2990_gaafc080a611dd724bed6ec081c2318f45}{get\+Est\+But\+Droit} ()
+\begin{DoxyCompactList}\small\item\em Obtenir si but droit. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga532682f4b1b10061bd143cc2be47c15b}{set\+Est\+But\+Gauche} (bool est\+But\+Gauche)
+\begin{DoxyCompactList}\small\item\em Modifier si but gauche. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga257530b094ebfab9325207bbe8aa43ef}{set\+Est\+But\+Droit} (bool est\+But\+Droit)
+\begin{DoxyCompactList}\small\item\em Modifier si but droit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe qui représente un exemple de noeud de l\textquotesingle{}arbre de rendu. 
+
+\begin{DoxyAuthor}{Author}
+Equipe 05 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2016-\/09-\/09 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_rondelle_8h}{Noeud\+Rondelle.\+h}\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_maillet_8cpp}{Noeud\+Maillet.\+cpp}\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_rondelle_8cpp}{Noeud\+Rondelle.\+cpp}\end{DoxyCompactItemize}

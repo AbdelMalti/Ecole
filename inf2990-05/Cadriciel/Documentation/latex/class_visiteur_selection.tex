@@ -1,0 +1,235 @@
+\hypertarget{class_visiteur_selection}{}\section{Visiteur\+Selection Class Reference}
+\label{class_visiteur_selection}\index{Visiteur\+Selection@{Visiteur\+Selection}}
+Inheritance diagram for Visiteur\+Selection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_visiteur_selection}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_visiteur_selection_a365c06c2dfaaa56d6200366ad6d1db4f}{Visiteur\+Selection} (glm\+::dvec3 \&point, bool Est\+Une\+Selection\+Pour\+Un\+Objet, G\+Lubyte couleur\mbox{[}$\,$\mbox{]}, const bool \&est\+Initialiser)
+\begin{DoxyCompactList}\small\item\em constructeur \end{DoxyCompactList}\item 
+\hyperlink{class_visiteur_selection_af74044cdf22e6bdc2a4cd8c5afafdc60}{$\sim$\+Visiteur\+Selection} ()
+\begin{DoxyCompactList}\small\item\em destructeur \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_visiteur_selection_a6e5ea715de4901f60ffc8c3e27081276}{visiter} (\hyperlink{class_noeud_composite}{Noeud\+Composite} $\ast$noeud\+Compsite)\hypertarget{class_visiteur_selection_a6e5ea715de4901f60ffc8c3e27081276}{}\label{class_visiteur_selection_a6e5ea715de4901f60ffc8c3e27081276}
+
+\begin{DoxyCompactList}\small\item\em visite noeud\+Compsite \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_visiteur_selection_ac8295f81cdbd4fec385cea1e2e88aa42}{visiter} (\hyperlink{class_noeud_bonus}{Noeud\+Bonus} $\ast$noeud\+Bonus)
+\begin{DoxyCompactList}\small\item\em visite noeud\+Bonus \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_visiteur_selection_afa8ff9c6097d294db935f402a44106f8}{visiter} (\hyperlink{class_noeud_but}{Noeud\+But} $\ast$noeud\+But)
+\begin{DoxyCompactList}\small\item\em visite noeud\+But \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_visiteur_selection_a7c0ba9a62ed93214d8c736cca20f3e40}{visiter} (\hyperlink{class_noeud_maillet}{Noeud\+Maillet} $\ast$noeud\+Maillet)\hypertarget{class_visiteur_selection_a7c0ba9a62ed93214d8c736cca20f3e40}{}\label{class_visiteur_selection_a7c0ba9a62ed93214d8c736cca20f3e40}
+
+\begin{DoxyCompactList}\small\item\em visite noeud\+Maillet \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_visiteur_selection_af7594f5f4743d798a19fe5e2efd4e046}{visiter} (\hyperlink{class_noeud_maillet_ordi}{Noeud\+Maillet\+Ordi} $\ast$noeud\+Maillet\+Ordi)\hypertarget{class_visiteur_selection_af7594f5f4743d798a19fe5e2efd4e046}{}\label{class_visiteur_selection_af7594f5f4743d798a19fe5e2efd4e046}
+
+\begin{DoxyCompactList}\small\item\em visite noeud\+Maillet\+Ordi \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_visiteur_selection_a02be83e5c864b3e461aa003412dfcc62}{visiter} (\hyperlink{class_noeud_portail}{Noeud\+Portail} $\ast$noeud\+Portail)
+\begin{DoxyCompactList}\small\item\em visite \hyperlink{class_noeud_portail}{Noeud\+Portail} \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_visiteur_selection_a2716c1240eda8da39b676a8311439145}{visiter} (\hyperlink{class_noeud_muret}{Noeud\+Muret} $\ast$noeud\+Muret)
+\begin{DoxyCompactList}\small\item\em visite noeud\+Muret \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_visiteur_selection_a176cb2f38da43bd420375b1faecc3c7a}{visiter} (\hyperlink{class_noeud_rondelle}{Noeud\+Rondelle} $\ast$noeud\+Rondelle)
+\begin{DoxyCompactList}\small\item\em visite noeud\+Rondelle \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_visiteur_selection_afa4c8349749bcad3b8b68a40f23da057}{visiter} (\hyperlink{class_noeud_table}{Noeud\+Table} $\ast$noeud\+Table)
+\item 
+bool \hyperlink{class_visiteur_selection_a3c9a1e6fe65e41f6c579bebca1d86d63}{obtenir\+Garde\+Selection} ()\hypertarget{class_visiteur_selection_a3c9a1e6fe65e41f6c579bebca1d86d63}{}\label{class_visiteur_selection_a3c9a1e6fe65e41f6c579bebca1d86d63}
+
+\begin{DoxyCompactList}\small\item\em Retourne garde\+Selection\+\_\+. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Visiteur\+Selection@{Visiteur\+Selection}!Visiteur\+Selection@{Visiteur\+Selection}}
+\index{Visiteur\+Selection@{Visiteur\+Selection}!Visiteur\+Selection@{Visiteur\+Selection}}
+\subsubsection[{\texorpdfstring{Visiteur\+Selection(glm\+::dvec3 \&point, bool Est\+Une\+Selection\+Pour\+Un\+Objet, G\+Lubyte couleur[], const bool \&est\+Initialiser)}{VisiteurSelection(glm::dvec3 &point, bool EstUneSelectionPourUnObjet, GLubyte couleur[], const bool &estInitialiser)}}]{\setlength{\rightskip}{0pt plus 5cm}Visiteur\+Selection\+::\+Visiteur\+Selection (
+\begin{DoxyParamCaption}
+\item[{glm\+::dvec3 \&}]{point, }
+\item[{bool}]{Est\+Une\+Selection\+Pour\+Un\+Objet, }
+\item[{G\+Lubyte}]{couleur\mbox{[}$\,$\mbox{]}, }
+\item[{const bool \&}]{est\+Initialiser}
+\end{DoxyParamCaption}
+)}\hypertarget{class_visiteur_selection_a365c06c2dfaaa56d6200366ad6d1db4f}{}\label{class_visiteur_selection_a365c06c2dfaaa56d6200366ad6d1db4f}
+
+
+constructeur 
+
+\hyperlink{class_visiteur_selection_a365c06c2dfaaa56d6200366ad6d1db4f}{Visiteur\+Selection\+::\+Visiteur\+Selection}(glm\+::dvec3 \& point, bool Est\+Une\+Selection\+Pour\+Un\+Objet, G\+Lubyte couleur\mbox{[}\mbox{]}, const bool\& est\+Initialiser)
+
+Ce constructeur ne fait qu\textquotesingle{}appeler la version de la classe de base et donner des valeurs par défaut aux variables membres.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em point} & \+: Le point à selectionner\\
+\hline
+\mbox{\tt in}  & {\em Est\+Une\+Selection\+Pour\+Un\+Objet} & \+: récupère si un noeud sélectionnable est sélectionné\\
+\hline
+\mbox{\tt in}  & {\em couleur} & \+: récupère la couleur du noeud sélectionné\\
+\hline
+\mbox{\tt in}  & {\em est\+Initialiser} & \+: booléen qui dit si l\textquotesingle{}initialisation de la sélection est faite\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune (constructeur). 
+\end{DoxyReturn}
+\index{Visiteur\+Selection@{Visiteur\+Selection}!````~Visiteur\+Selection@{$\sim$\+Visiteur\+Selection}}
+\index{````~Visiteur\+Selection@{$\sim$\+Visiteur\+Selection}!Visiteur\+Selection@{Visiteur\+Selection}}
+\subsubsection[{\texorpdfstring{$\sim$\+Visiteur\+Selection()}{~VisiteurSelection()}}]{\setlength{\rightskip}{0pt plus 5cm}Visiteur\+Selection\+::$\sim$\+Visiteur\+Selection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_visiteur_selection_af74044cdf22e6bdc2a4cd8c5afafdc60}{}\label{class_visiteur_selection_af74044cdf22e6bdc2a4cd8c5afafdc60}
+
+
+destructeur 
+
+Destructeur qui détruit le visiteur.
+
+\begin{DoxyReturn}{Returns}
+Aucune (destructeur). 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Visiteur\+Selection@{Visiteur\+Selection}!visiter@{visiter}}
+\index{visiter@{visiter}!Visiteur\+Selection@{Visiteur\+Selection}}
+\subsubsection[{\texorpdfstring{visiter(\+Noeud\+Bonus $\ast$noeud\+Bonus)}{visiter(NoeudBonus *noeudBonus)}}]{\setlength{\rightskip}{0pt plus 5cm}void Visiteur\+Selection\+::visiter (
+\begin{DoxyParamCaption}
+\item[{{\bf Noeud\+Bonus} $\ast$}]{noeud\+Bonus}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_visiteur_selection_ac8295f81cdbd4fec385cea1e2e88aa42}{}\label{class_visiteur_selection_ac8295f81cdbd4fec385cea1e2e88aa42}
+
+
+visite noeud\+Bonus 
+
+Cette fonction va permettre au noeud d\textquotesingle{}être visité
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em noeud\+Bonus} & \+: le noeud à visiter\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+Si le noeud est sélectionnable et sélectionné 
+
+Implements \hyperlink{class_visiteur_abstrait}{Visiteur\+Abstrait}.
+
+\index{Visiteur\+Selection@{Visiteur\+Selection}!visiter@{visiter}}
+\index{visiter@{visiter}!Visiteur\+Selection@{Visiteur\+Selection}}
+\subsubsection[{\texorpdfstring{visiter(\+Noeud\+But $\ast$noeud\+But)}{visiter(NoeudBut *noeudBut)}}]{\setlength{\rightskip}{0pt plus 5cm}void Visiteur\+Selection\+::visiter (
+\begin{DoxyParamCaption}
+\item[{{\bf Noeud\+But} $\ast$}]{noeud\+But}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_visiteur_selection_afa8ff9c6097d294db935f402a44106f8}{}\label{class_visiteur_selection_afa8ff9c6097d294db935f402a44106f8}
+
+
+visite noeud\+But 
+
+Cette methode permet de selectionne à un objet de la classe \hyperlink{class_noeud_muret}{Noeud\+Muret}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em noeud\+But} & \+: le noeud à visiter\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_visiteur_abstrait}{Visiteur\+Abstrait}.
+
+\index{Visiteur\+Selection@{Visiteur\+Selection}!visiter@{visiter}}
+\index{visiter@{visiter}!Visiteur\+Selection@{Visiteur\+Selection}}
+\subsubsection[{\texorpdfstring{visiter(\+Noeud\+Portail $\ast$noeud\+Portail)}{visiter(NoeudPortail *noeudPortail)}}]{\setlength{\rightskip}{0pt plus 5cm}void Visiteur\+Selection\+::visiter (
+\begin{DoxyParamCaption}
+\item[{{\bf Noeud\+Portail} $\ast$}]{noeud\+Portail}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_visiteur_selection_a02be83e5c864b3e461aa003412dfcc62}{}\label{class_visiteur_selection_a02be83e5c864b3e461aa003412dfcc62}
+
+
+visite \hyperlink{class_noeud_portail}{Noeud\+Portail} 
+
+si le noeud est sélectionnable et sélectionné 
+
+Implements \hyperlink{class_visiteur_abstrait}{Visiteur\+Abstrait}.
+
+\index{Visiteur\+Selection@{Visiteur\+Selection}!visiter@{visiter}}
+\index{visiter@{visiter}!Visiteur\+Selection@{Visiteur\+Selection}}
+\subsubsection[{\texorpdfstring{visiter(\+Noeud\+Muret $\ast$noeud\+Muret)}{visiter(NoeudMuret *noeudMuret)}}]{\setlength{\rightskip}{0pt plus 5cm}void Visiteur\+Selection\+::visiter (
+\begin{DoxyParamCaption}
+\item[{{\bf Noeud\+Muret} $\ast$}]{noeud\+Muret}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_visiteur_selection_a2716c1240eda8da39b676a8311439145}{}\label{class_visiteur_selection_a2716c1240eda8da39b676a8311439145}
+
+
+visite noeud\+Muret 
+
+Cette methode permet de selectionne à un objet de la classe \hyperlink{class_noeud_muret}{Noeud\+Muret}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em noeud\+Portail} & \+: le noeud à visiter\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+si le noeud est sélectionnable et sélectionné 
+
+Implements \hyperlink{class_visiteur_abstrait}{Visiteur\+Abstrait}.
+
+\index{Visiteur\+Selection@{Visiteur\+Selection}!visiter@{visiter}}
+\index{visiter@{visiter}!Visiteur\+Selection@{Visiteur\+Selection}}
+\subsubsection[{\texorpdfstring{visiter(\+Noeud\+Rondelle $\ast$noeud\+Rondelle)}{visiter(NoeudRondelle *noeudRondelle)}}]{\setlength{\rightskip}{0pt plus 5cm}void Visiteur\+Selection\+::visiter (
+\begin{DoxyParamCaption}
+\item[{{\bf Noeud\+Rondelle} $\ast$}]{noeud\+Rondelle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_visiteur_selection_a176cb2f38da43bd420375b1faecc3c7a}{}\label{class_visiteur_selection_a176cb2f38da43bd420375b1faecc3c7a}
+
+
+visite noeud\+Rondelle 
+
+Cette methode permet de selectionne à un objet de la classe \hyperlink{class_noeud_muret}{Noeud\+Muret}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em noeud\+Rondelle} & \+: le noeud à visiter\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_visiteur_abstrait}{Visiteur\+Abstrait}.
+
+\index{Visiteur\+Selection@{Visiteur\+Selection}!visiter@{visiter}}
+\index{visiter@{visiter}!Visiteur\+Selection@{Visiteur\+Selection}}
+\subsubsection[{\texorpdfstring{visiter(\+Noeud\+Table $\ast$noeud\+Table)}{visiter(NoeudTable *noeudTable)}}]{\setlength{\rightskip}{0pt plus 5cm}void Visiteur\+Selection\+::visiter (
+\begin{DoxyParamCaption}
+\item[{{\bf Noeud\+Table} $\ast$}]{noeud\+Table}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_visiteur_selection_afa4c8349749bcad3b8b68a40f23da057}{}\label{class_visiteur_selection_afa4c8349749bcad3b8b68a40f23da057}
+Cette methode permet de selectionne à un objet de la classe \hyperlink{class_noeud_muret}{Noeud\+Muret}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em noeud\+Table} & \+: le noeud à visiter\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Aucune. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_visiteur_abstrait}{Visiteur\+Abstrait}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+D\+L\+L/\+Visiteurs/Visiteur\+Selection.\+h\item 
+Sources/\+D\+L\+L/\+Visiteurs/Visiteur\+Selection.\+cpp\end{DoxyCompactItemize}

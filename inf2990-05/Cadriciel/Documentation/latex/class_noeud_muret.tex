@@ -1,0 +1,64 @@
+\hypertarget{class_noeud_muret}{}\section{Noeud\+Muret Class Reference}
+\label{class_noeud_muret}\index{Noeud\+Muret@{Noeud\+Muret}}
+
+
+Classe qui représente un exemple de noeud de l\textquotesingle{}arbre de rendu.  
+
+
+
+
+{\ttfamily \#include $<$Noeud\+Muret.\+h$>$}
+
+Inheritance diagram for Noeud\+Muret\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_noeud_muret}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_gaed79ffb9953bf45a71b81e283bd5fbce}{Noeud\+Muret} (const std\+::string \&type\+Noeud)
+\begin{DoxyCompactList}\small\item\em Constructeur à partir du type du noeud. \end{DoxyCompactList}\item 
+\hyperlink{group__inf2990_ga43baa02eebc31d004bc5a9257779e7e4}{Noeud\+Muret} (\hyperlink{class_noeud_muret}{Noeud\+Muret} $\ast$muret\+Copier)
+\begin{DoxyCompactList}\small\item\em Constructeur copie de noeud. \end{DoxyCompactList}\item 
+\hyperlink{group__inf2990_ga98b208e791b2e3c257ab2ba403287fea}{$\sim$\+Noeud\+Muret} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga9872b38b9c42af9406ae550a9892edd9}{afficher\+Concret} (const glm\+::mat4 \&vue\+Projection, const bool \&est\+Colore) const 
+\begin{DoxyCompactList}\small\item\em Affiche le muret. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga5acf4176b07c849da044bcd967cf4f34}{animer} (float temps)
+\begin{DoxyCompactList}\small\item\em Effectue l\textquotesingle{}animation du muret. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga0d2e1c77bf313d3459a8becddfce48f2}{assigner\+Objet\+Rendu} (modele\+::\+Modele3D const $\ast$modele, opengl\+::\+V\+BO const $\ast$liste) override
+\begin{DoxyCompactList}\small\item\em Assigne le modèle3D et la liste d\textquotesingle{}affichage du noeud courant. \end{DoxyCompactList}\item 
+utilitaire\+::\+Boite\+Englobante \hyperlink{group__inf2990_ga69f2f84cd5ba37fb48afe13a7dda13e7}{get\+Boite\+Englobante} ()
+\begin{DoxyCompactList}\small\item\em Obtient la boite englobante du muret. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga157217a28094428f68e43903feecdbba}{accepter} (\hyperlink{class_visiteur_abstrait}{Visiteur\+Abstrait} $\ast$visiteur)
+\begin{DoxyCompactList}\small\item\em Accepter visiteur. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga2db9162e995de9615724548805209901}{set\+Longueur\+Muret} (double longueur)
+\begin{DoxyCompactList}\small\item\em Modifie la longueur du muret. \end{DoxyCompactList}\item 
+double \hyperlink{group__inf2990_ga21bb94fec4329579f50383ba2fcfe5b0}{get\+Longueur\+Muret} ()
+\begin{DoxyCompactList}\small\item\em Obtient la longueur du muret. \end{DoxyCompactList}\item 
+double \hyperlink{group__inf2990_gac4c1533005b013d01f987b5c960440ff}{get\+Angle\+Rotation} ()
+\begin{DoxyCompactList}\small\item\em Obtient l\textquotesingle{}angle de rotation. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_gabaa61b52de2c5c22be04c6a9293e3db2}{set\+Angle\+Rotation} (double angle)
+\begin{DoxyCompactList}\small\item\em Modifie l\textquotesingle{}angle de rotation. \end{DoxyCompactList}\item 
+bool \hyperlink{group__inf2990_ga752949d6610605c5b8f59bd43650a0cb}{tester\+Selection} (G\+Lubyte Objet\+Colore\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Permet de vérifier la selection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe qui représente un exemple de noeud de l\textquotesingle{}arbre de rendu. 
+
+\begin{DoxyAuthor}{Author}
+Jackie Phung 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2016-\/09-\/09 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_muret_8h}{Noeud\+Muret.\+h}\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_muret_8cpp}{Noeud\+Muret.\+cpp}\end{DoxyCompactItemize}

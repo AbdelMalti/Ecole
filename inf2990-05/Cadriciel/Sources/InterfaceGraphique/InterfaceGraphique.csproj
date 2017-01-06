@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B861DACD-1D37-4C9D-A1D0-3468C9072C74}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InterfaceGraphique</RootNamespace>
+    <AssemblyName>InterfaceGraphique</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Exe\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Exe\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>InterfaceGraphique.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aide.Designer.cs" />
+    <Compile Include="ArbreTournoiConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArbreTournoiConfig.Designer.cs">
+      <DependentUpon>ArbreTournoiConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="avertissement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="avertissement.Designer.cs">
+      <DependentUpon>avertissement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuration.Designer.cs">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edition.Designer.cs">
+      <DependentUpon>Edition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NouveauJoueurVirtuel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NouveauJoueurVirtuel.Designer.cs">
+      <DependentUpon>NouveauJoueurVirtuel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartieRapideConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartieRapideConfig.designer.cs">
+      <DependentUpon>PartieRapideConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TournoiConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TournoiConfig.Designer.cs">
+      <DependentUpon>TournoiConfig.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Aide.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Aide2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArbreTournoiConfig.resx">
+      <DependentUpon>ArbreTournoiConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="avertissement.resx">
+      <DependentUpon>avertissement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration.resx">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edition.resx">
+      <DependentUpon>Edition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NouveauJoueurVirtuel.resx">
+      <DependentUpon>NouveauJoueurVirtuel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartieRapideConfig.resx">
+      <DependentUpon>PartieRapideConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TournoiConfig.resx">
+      <DependentUpon>TournoiConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImageConfiguration.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configurationImageFond.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stanleyCup.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stanleyCup1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partieRapideImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quitterImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configurationIconpre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editionTactique.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hockeyPlayer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecheBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\annulerBouton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folderIconPre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pagePrincipalIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\testIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aideIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2dIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3dIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nouveauIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openFileIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vueIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infoIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outilsIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proprieteIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editerPre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editionIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filesIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectionIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deplacement.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reotationIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scaleIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duplicationIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acceleratorIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muretIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portaillIon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pointControlIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_atl_Icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>$(TargetName).exe testsC++</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

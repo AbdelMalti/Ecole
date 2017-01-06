@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TournoiConfigs xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Lejoueur1>humain1</Lejoueur1>
+  <Lejoueur1Text />
+  <Lejoueur2>virtuel2</Lejoueur2>
+  <Lejoueur2Text />
+  <Lejoueur3>virtuel3</Lejoueur3>
+  <Lejoueur3Text>steven</Lejoueur3Text>
+  <Lejoueur4>virtuel4</Lejoueur4>
+  <Lejoueur4Text />
+  <ZoneJeu>zone de jeu</ZoneJeu>
+</TournoiConfigs>

@@ -1,0 +1,68 @@
+\hypertarget{class_noeud_maillet_ordi}{}\section{Noeud\+Maillet\+Ordi Class Reference}
+\label{class_noeud_maillet_ordi}\index{Noeud\+Maillet\+Ordi@{Noeud\+Maillet\+Ordi}}
+
+
+Classe qui représente un exemple de noeud de l\textquotesingle{}arbre de rendu.  
+
+
+
+
+{\ttfamily \#include $<$Noeud\+Maillet\+Ordi.\+h$>$}
+
+Inheritance diagram for Noeud\+Maillet\+Ordi\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_noeud_maillet_ordi}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__inf2990_ga9c7996f6b0d50f627339868c40689dd7}{Noeud\+Maillet\+Ordi} (const std\+::string \&type\+Noeud)
+\begin{DoxyCompactList}\small\item\em Constructeur à partir du type du noeud. \end{DoxyCompactList}\item 
+\hyperlink{group__inf2990_ga60632cdbfbbb98b2d7d9dcb6be59c59c}{$\sim$\+Noeud\+Maillet\+Ordi} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga610aa08b343d2407720d918788f29d1d}{afficher\+Concret} (const glm\+::mat4 \&vue\+Projection, const bool \&est\+Colore) const 
+\begin{DoxyCompactList}\small\item\em Affiche la rondelle. \end{DoxyCompactList}\item 
+virtual void \hyperlink{group__inf2990_ga7a9336f9a4b6543f88b673d54d9044d2}{animer} (float temps)
+\begin{DoxyCompactList}\small\item\em Effectue l\textquotesingle{}animation de la rondelle. \end{DoxyCompactList}\item 
+void \hyperlink{group__inf2990_ga3af37345e97532fa95ec2d0ff17c0b03}{assigner\+Objet\+Rendu} (modele\+::\+Modele3D const $\ast$modele, opengl\+::\+V\+BO const $\ast$liste) override
+\begin{DoxyCompactList}\small\item\em Assigne le modèle3D et la liste d\textquotesingle{}affichage du noeud courant. \end{DoxyCompactList}\item 
+utilitaire\+::\+Cylindre\+Englobant {\bfseries get\+Boite\+Englobante} ()
+\item 
+virtual void \hyperlink{group__inf2990_ga536d4542e4e7ea867e045de2e3c96fc8}{accepter} (\hyperlink{class_visiteur_abstrait}{Visiteur\+Abstrait} $\ast$visiteur)
+\item 
+void \hyperlink{group__inf2990_gab630d9cdaca35d1114586b96449228c0}{set\+Rayon\+Maillet} (double rayon)
+\item 
+double {\bfseries get\+Rayon\+Maillet} ()
+\item 
+double {\bfseries get\+Angle\+Rotation} ()
+\item 
+void {\bfseries set\+Angle\+Rotation} (double angle\+Rotation)
+\item 
+void {\bfseries set\+Position} (glm\+::vec3 position)
+\item 
+glm\+::vec3 {\bfseries get\+Position} () const 
+\item 
+double {\bfseries get\+Masse} ()
+\item 
+void {\bfseries set\+Est\+Ordi} (bool est\+Ordi)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe qui représente un exemple de noeud de l\textquotesingle{}arbre de rendu. 
+
+\begin{DoxyAuthor}{Author}
+Equipe 05 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2016-\/09-\/09 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_maillet_ordi_8h}{Noeud\+Maillet\+Ordi.\+h}\item 
+Sources/\+D\+L\+L/\+Arbre/\+Noeuds/\hyperlink{_noeud_maillet_ordi_8cpp}{Noeud\+Maillet\+Ordi.\+cpp}\end{DoxyCompactItemize}
