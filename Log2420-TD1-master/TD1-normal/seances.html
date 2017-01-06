@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<p>
+<head>
+	<!--  -->
+	<meta charset="utf-8"></meta>
+	<title>LOG2420 - Détails des séances</title>
+	<!-- liens nécéssaires pour utiliser AngularJS et Jquery, ainsi que notre css et javascript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="seances.css">
+	<script src="seances.js"></script>
+</head>
+
+
+<!-- définition du app de angularJS -->
+<body ng-app="app">
+	
+<!-------------------------- Top de la page seances (logo, titre et version imprimable) -------------------------->
+	<div id="top">
+		
+		<!-- Logo -->
+		<a id="logo" href="https://www.polymtl.ca">
+			<img src="logopoly.gif" alt="Logo Polytechnique">
+		</a>
+		
+		<!-- Titre -->
+		<div id="gentitle">
+			<div id="title">LOG2420, Analyse et conception d'interfaces utilisateurs</div><br>
+			<div id="subtitle">Automne 2016</div>
+		</div>
+		
+		<!-- version imprimable -->
+		<div id="topmenu">
+			<a class="print" href="">
+				<img src="printer.png"></img>format impression
+			</a>
+		</div>
+	</div>
+	<img class = "line" src="http://www.groupes.polymtl.ca/log2420/Images/border.png">
+	
+	
+	<div id = "bottom">
+		
+<!-------------------------- Menu -------------------------->
+		<div class="menu" ng-controller="menuCtrl">
+			<ul class = "bottomClass">
+				<li ng-repeat="o in menu" class = "opt{{$index+1}}">
+					<span ng-if="o.Lien != '0'"><a href = "{{o.Lien}}" class = "menuLink">{{o.Nom}}</a></span>
+					<span ng-if="o.Lien == '0'">{{o.Nom}}</span>
+				</li>
+			</ul>
+			<div id="lowMenu">
+				<a class="print" href="">
+					<img src="printer.png"></img>format impression
+				</a>
+			</div>
+		</div>
+		
+<!-------------------------- Texte -------------------------->
+		<div id = "details" ng-controller="seancesCtrl">
+			<div>
+				<h1 class = "bodyTitle">Détails des séances</h1><!-- Probleme au niveau de la ligne orange qui est dans le CSS du h1 tout en bas du document-->
+
+				<p><a href="index.php?charge=o">Version</a> pour les chargés de cours.</p>
+
+				<p><b>Attention: cette page et son contenu seront modifiés en cours de trimestre selon les besoins. Attendez à la semaine correspondante pour imprimer les transparents!<br/>
+				Dernière mise à jour : 29 août.</b></p>
+
+				<p>Le détail de chaque séance de cours est fourni semaine par semaine.
+				<br>
+				<span ng-repeat="val in seances">
+					<a href="http:#{{$index+1}}">{{$index+1}}</a>
+				</span>
+				</p>
+			</div>
+			
+<!-------------------------- Tableau -------------------------->
+			<div id="table" class="center" >
+				<table>
+					<tr class="topTable">
+						<th colspan="2">Semaines</th>
+						<th>Transparents</th>
+						<th>Documents</th>
+						<th>Évaluations</th>
+					</tr>
+					<tr ng-repeat="val in seances">
+						<td id="{{$index+1}}" class = "numWeek">{{$index+1}}</td>
+						<td ng-bind-html="val.date"></td>
+						<td ng-bind-html="val.transparents"></td>
+						<td ng-bind-html="val.documents"></td>
+						<td id="colEvaluation" ng-bind-html="val.evaluations"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,309 @@
+GAS LISTING /tmp/cccfmxRI.s 			page 1
+
+
+   1               		.file	"pb2.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/abdeljelil/Desktop/",100,0,4,.Ltext0
+   8               		.stabs	"pb2.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;0777777777777777777777;",128,0,
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  30               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  31               		.stabs	"short int:t(0,18)=r(0,18);-32768;32767;",128,0,0,0
+  32               		.stabs	"short unsigned int:t(0,19)=r(0,19);0;0177777;",128,0,0,0
+  33               		.stabs	"unsigned short:t(0,19)",128,0,0,0
+  34               		.stabs	"float:t(0,20)=r(0,9);4;0;",128,0,0,0
+  35               		.stabs	"double:t(0,21)=r(0,9);4;0;",128,0,0,0
+  36               		.stabs	"long double:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"short _Fract:t(0,23)=r(0,9);1;0;",128,0,0,0
+  38               		.stabs	"long _Fract:t(0,24)=r(0,9);4;0;",128,0,0,0
+  39               		.stabs	"long long _Fract:t(0,25)=r(0,9);8;0;",128,0,0,0
+  40               		.stabs	"unsigned short _Fract:t(0,26)=r(0,9);1;0;",128,0,0,0
+  41               		.stabs	"unsigned _Fract:t(0,27)=r(0,9);2;0;",128,0,0,0
+  42               		.stabs	"unsigned long _Fract:t(0,28)=r(0,9);4;0;",128,0,0,0
+  43               		.stabs	"unsigned long long _Fract:t(0,29)=r(0,9);8;0;",128,0,0,0
+  44               		.stabs	"_Sat short _Fract:t(0,30)=r(0,9);1;0;",128,0,0,0
+  45               		.stabs	"_Sat _Fract:t(0,31)=r(0,9);2;0;",128,0,0,0
+  46               		.stabs	"_Sat long _Fract:t(0,32)=r(0,9);4;0;",128,0,0,0
+  47               		.stabs	"_Sat long long _Fract:t(0,33)=r(0,9);8;0;",128,0,0,0
+  48               		.stabs	"_Sat unsigned short _Fract:t(0,34)=r(0,9);1;0;",128,0,0,0
+  49               		.stabs	"_Sat unsigned _Fract:t(0,35)=r(0,9);2;0;",128,0,0,0
+  50               		.stabs	"_Sat unsigned long _Fract:t(0,36)=r(0,9);4;0;",128,0,0,0
+  51               		.stabs	"_Sat unsigned long long _Fract:t(0,37)=r(0,9);8;0;",128,0,0,0
+  52               		.stabs	"short _Accum:t(0,38)=r(0,9);2;0;",128,0,0,0
+  53               		.stabs	"long _Accum:t(0,39)=r(0,9);8;0;",128,0,0,0
+  54               		.stabs	"long long _Accum:t(0,40)=r(0,9);8;0;",128,0,0,0
+  55               		.stabs	"unsigned short _Accum:t(0,41)=r(0,9);2;0;",128,0,0,0
+  56               		.stabs	"unsigned _Accum:t(0,42)=r(0,9);4;0;",128,0,0,0
+  57               		.stabs	"unsigned long _Accum:t(0,43)=r(0,9);8;0;",128,0,0,0
+GAS LISTING /tmp/cccfmxRI.s 			page 2
+
+
+  58               		.stabs	"unsigned long long _Accum:t(0,44)=r(0,9);8;0;",128,0,0,0
+  59               		.stabs	"_Sat short _Accum:t(0,45)=r(0,9);2;0;",128,0,0,0
+  60               		.stabs	"_Sat _Accum:t(0,46)=r(0,9);4;0;",128,0,0,0
+  61               		.stabs	"_Sat long _Accum:t(0,47)=r(0,9);8;0;",128,0,0,0
+  62               		.stabs	"_Sat long long _Accum:t(0,48)=r(0,9);8;0;",128,0,0,0
+  63               		.stabs	"_Sat unsigned short _Accum:t(0,49)=r(0,9);2;0;",128,0,0,0
+  64               		.stabs	"_Sat unsigned _Accum:t(0,50)=r(0,9);4;0;",128,0,0,0
+  65               		.stabs	"_Sat unsigned long _Accum:t(0,51)=r(0,9);8;0;",128,0,0,0
+  66               		.stabs	"_Sat unsigned long long _Accum:t(0,52)=r(0,9);8;0;",128,0,0,0
+  67               		.stabs	"void:t(0,4)",128,0,0,0
+  68               		.stabs	"wchar_t:t(0,53)=r(0,53);-32768;32767;",128,0,0,0
+  69               		.stabs	"bool:t(0,54)=@s8;-16;",128,0,0,0
+  70               		.stabs	"__vtbl_ptr_type:t(0,55)=*(0,56)=f(0,9)",128,0,0,0
+  71               		.stabs	"decltype(nullptr):t(0,57)=(0,57)",128,0,0,0
+  72               		.stabs	"int8_t:t(0,58)=(0,16)",128,0,121,0
+  73               		.stabs	"uint8_t:t(0,59)=(0,13)",128,0,122,0
+  74               		.stabs	"int16_t:t(0,60)=(0,9)",128,0,123,0
+  75               		.stabs	"uint16_t:t(0,61)=(0,12)",128,0,124,0
+  76               		.stabs	"int32_t:t(0,62)=(0,15)",128,0,125,0
+  77               		.stabs	"uint32_t:t(0,63)=(0,11)",128,0,126,0
+  78               		.stabs	"int64_t:t(0,64)=(0,14)",128,0,128,0
+  79               		.stabs	"uint64_t:t(0,65)=(0,10)",128,0,129,0
+  80               		.stabs	"intptr_t:t(0,66)=(0,60)",128,0,142,0
+  81               		.stabs	"uintptr_t:t(0,67)=(0,61)",128,0,147,0
+  82               		.stabs	"int_least8_t:t(0,68)=(0,58)",128,0,159,0
+  83               		.stabs	"uint_least8_t:t(0,69)=(0,59)",128,0,164,0
+  84               		.stabs	"int_least16_t:t(0,70)=(0,60)",128,0,169,0
+  85               		.stabs	"uint_least16_t:t(0,71)=(0,61)",128,0,174,0
+  86               		.stabs	"int_least32_t:t(0,72)=(0,62)",128,0,179,0
+  87               		.stabs	"uint_least32_t:t(0,73)=(0,63)",128,0,184,0
+  88               		.stabs	"int_least64_t:t(0,74)=(0,64)",128,0,192,0
+  89               		.stabs	"uint_least64_t:t(0,75)=(0,65)",128,0,199,0
+  90               		.stabs	"int_fast8_t:t(0,76)=(0,58)",128,0,213,0
+  91               		.stabs	"uint_fast8_t:t(0,77)=(0,59)",128,0,218,0
+  92               		.stabs	"int_fast16_t:t(0,78)=(0,60)",128,0,223,0
+  93               		.stabs	"uint_fast16_t:t(0,79)=(0,61)",128,0,228,0
+  94               		.stabs	"int_fast32_t:t(0,80)=(0,62)",128,0,233,0
+  95               		.stabs	"uint_fast32_t:t(0,81)=(0,63)",128,0,238,0
+  96               		.stabs	"int_fast64_t:t(0,82)=(0,64)",128,0,246,0
+  97               		.stabs	"uint_fast64_t:t(0,83)=(0,65)",128,0,253,0
+  98               		.stabs	"intmax_t:t(0,84)=(0,64)",128,0,273,0
+  99               		.stabs	"uintmax_t:t(0,85)=(0,65)",128,0,278,0
+ 100               		.stabs	"int_farptr_t:t(0,86)=(0,62)",128,0,77,0
+ 101               		.stabs	"uint_farptr_t:t(0,87)=(0,63)",128,0,81,0
+ 102               		.stabs	"._0:Tt(0,88)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+ 103               		.stabs	"__fuse_t:t(0,88)",128,0,244,0
+ 104               		.stabs	"can:Tt(0,89)=s1__base_ctor ::(0,90)=#(0,89),(0,4),(0,91)=*(0,89),(0,4);:_ZN3canC2Ev;2A.;__
+ 105               		.stabs	"_Z10initializev:F(0,4)",36,0,14,_Z10initializev
+ 106               	.global	_Z10initializev
+ 107               		.type	_Z10initializev, @function
+ 108               	_Z10initializev:
+ 109               		.stabd	46,0,0
+   1:pb2.cpp       **** // Problème 2 du TP7. Permet d'allumer une lumière de couleur différente selon
+   2:pb2.cpp       **** // l'intensité de la lumière fournie à la cellule photosensible.
+   3:pb2.cpp       **** // Par Brandon Roberge et Abdeljelil Malti.
+   4:pb2.cpp       **** // Équipe 66 groupe 3
+   5:pb2.cpp       **** // 28 février 2016
+GAS LISTING /tmp/cccfmxRI.s 			page 3
+
+
+   6:pb2.cpp       **** 
+   7:pb2.cpp       **** // Broches utilisees :
+   8:pb2.cpp       **** // Cellule photosensible: PORTA3,
+   9:pb2.cpp       **** // DEL: PORTB0 et PORTB1
+  10:pb2.cpp       **** 
+  11:pb2.cpp       **** #include <avr/io.h>
+  12:pb2.cpp       **** #include "can.h"
+  13:pb2.cpp       **** 
+  14:pb2.cpp       **** void initialize(){
+ 110               		.stabn	68,0,14,.LM0-.LFBB1
+ 111               	.LM0:
+ 112               	.LFBB1:
+ 113               	/* prologue: function */
+ 114               	/* frame size = 0 */
+ 115               	/* stack size = 0 */
+ 116               	.L__stack_usage = 0
+  15:pb2.cpp       ****     DDRA = 0x00; // PORT A est en mode entree
+ 117               		.stabn	68,0,15,.LM1-.LFBB1
+ 118               	.LM1:
+ 119 0000 11B8      		out 0x1,__zero_reg__
+  16:pb2.cpp       ****     DDRB = 0xff; // PORT B est en mode sortie
+ 120               		.stabn	68,0,16,.LM2-.LFBB1
+ 121               	.LM2:
+ 122 0002 8FEF      		ldi r24,lo8(-1)
+ 123 0004 84B9      		out 0x4,r24
+  17:pb2.cpp       ****     DDRC = 0xff; // PORT C est en mode sortie
+ 124               		.stabn	68,0,17,.LM3-.LFBB1
+ 125               	.LM3:
+ 126 0006 87B9      		out 0x7,r24
+  18:pb2.cpp       ****     DDRD = 0x00; // PORT D est en mode entree
+ 127               		.stabn	68,0,18,.LM4-.LFBB1
+ 128               	.LM4:
+ 129 0008 1AB8      		out 0xa,__zero_reg__
+ 130 000a 0895      		ret
+ 131               		.size	_Z10initializev, .-_Z10initializev
+ 132               	.Lscope1:
+ 133               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 134               		.stabd	78,0,0
+ 135               		.section	.text.startup,"ax",@progbits
+ 136               		.stabs	"main:F(0,9)",36,0,22,main
+ 137               	.global	main
+ 138               		.type	main, @function
+ 139               	main:
+ 140               		.stabd	46,0,0
+  19:pb2.cpp       **** }
+  20:pb2.cpp       **** 
+  21:pb2.cpp       **** 
+  22:pb2.cpp       **** int main(){
+ 141               		.stabn	68,0,22,.LM5-.LFBB2
+ 142               	.LM5:
+ 143               	.LFBB2:
+ 144 0000 CF93      		push r28
+ 145 0002 DF93      		push r29
+ 146 0004 1F92      		push __zero_reg__
+ 147 0006 CDB7      		in r28,__SP_L__
+ 148 0008 DEB7      		in r29,__SP_H__
+ 149               	/* prologue: function */
+GAS LISTING /tmp/cccfmxRI.s 			page 4
+
+
+ 150               	/* frame size = 1 */
+ 151               	/* stack size = 3 */
+ 152               	.L__stack_usage = 3
+ 153               	.LBB2:
+  23:pb2.cpp       ****     initialize();
+ 154               		.stabn	68,0,23,.LM6-.LFBB2
+ 155               	.LM6:
+ 156 000a 0E94 0000 		call _Z10initializev
+  24:pb2.cpp       **** 
+  25:pb2.cpp       ****     uint8_t positionDuCapteur = 0x02;
+  26:pb2.cpp       ****     can can;
+ 157               		.stabn	68,0,26,.LM7-.LFBB2
+ 158               	.LM7:
+ 159 000e CE01      		movw r24,r28
+ 160 0010 0196      		adiw r24,1
+ 161 0012 0E94 0000 		call _ZN3canC1Ev
+  27:pb2.cpp       **** 
+  28:pb2.cpp       ****     uint8_t selecteurAmbre = 0;
+ 162               		.stabn	68,0,28,.LM8-.LFBB2
+ 163               	.LM8:
+ 164 0016 10E0      		ldi r17,0
+ 165 0018 01E0      		ldi r16,lo8(1)
+ 166               	.L3:
+ 167               	.LBB3:
+  29:pb2.cpp       **** 
+  30:pb2.cpp       ****     while(true){
+  31:pb2.cpp       ****         uint16_t valeur = can.lecture(positionDuCapteur);
+ 168               		.stabn	68,0,31,.LM9-.LFBB2
+ 169               	.LM9:
+ 170 001a 62E0      		ldi r22,lo8(2)
+ 171 001c CE01      		movw r24,r28
+ 172 001e 0196      		adiw r24,1
+ 173 0020 0E94 0000 		call _ZN3can7lectureEh
+  32:pb2.cpp       **** 
+  33:pb2.cpp       ****         //Décalage afin d'avoir 8 bits.
+  34:pb2.cpp       ****         valeur = valeur >> 2;
+ 174               		.stabn	68,0,34,.LM10-.LFBB2
+ 175               	.LM10:
+ 176 0024 9695      		lsr r25
+ 177 0026 8795      		ror r24
+ 178 0028 9695      		lsr r25
+ 179 002a 8795      		ror r24
+  35:pb2.cpp       **** 
+  36:pb2.cpp       ****         //Si l'intensité est faible ( 33% ou inferieur ).
+  37:pb2.cpp       ****         if(valeur <= 85){
+ 180               		.stabn	68,0,37,.LM11-.LFBB2
+ 181               	.LM11:
+ 182 002c 8635      		cpi r24,86
+ 183 002e 9105      		cpc r25,__zero_reg__
+ 184 0030 00F4      		brsh .L4
+  38:pb2.cpp       ****             PORTB = 0x01;
+ 185               		.stabn	68,0,38,.LM12-.LFBB2
+ 186               	.LM12:
+ 187 0032 05B9      		out 0x5,r16
+ 188 0034 00C0      		rjmp .L3
+ 189               	.L4:
+  39:pb2.cpp       ****         }//Si l'intensité est moyenne ( 66% ou inferieur ).
+GAS LISTING /tmp/cccfmxRI.s 			page 5
+
+
+  40:pb2.cpp       ****         else if(valeur <= 170){
+ 190               		.stabn	68,0,40,.LM13-.LFBB2
+ 191               	.LM13:
+ 192 0036 8B3A      		cpi r24,-85
+ 193 0038 9105      		cpc r25,__zero_reg__
+ 194 003a 00F4      		brsh .L6
+  41:pb2.cpp       ****             if(selecteurAmbre)
+ 195               		.stabn	68,0,41,.LM14-.LFBB2
+ 196               	.LM14:
+ 197 003c 1123      		tst r17
+ 198 003e 01F0      		breq .L7
+  42:pb2.cpp       ****                 PORTB = 0x01;
+ 199               		.stabn	68,0,42,.LM15-.LFBB2
+ 200               	.LM15:
+ 201 0040 05B9      		out 0x5,r16
+ 202 0042 00C0      		rjmp .L8
+ 203               	.L7:
+  43:pb2.cpp       ****             else
+  44:pb2.cpp       ****                 PORTB = 0x02;
+ 204               		.stabn	68,0,44,.LM16-.LFBB2
+ 205               	.LM16:
+ 206 0044 82E0      		ldi r24,lo8(2)
+ 207 0046 85B9      		out 0x5,r24
+ 208               	.L8:
+ 209 0048 1027      		eor r17,r16
+ 210 004a 00C0      		rjmp .L3
+ 211               	.L6:
+  45:pb2.cpp       ****             selecteurAmbre = selecteurAmbre != 0 ? 0 : 1;
+  46:pb2.cpp       ****         }//Si l'intensité est forte ( 66% à 100% ).
+  47:pb2.cpp       ****         else{
+  48:pb2.cpp       ****             PORTB = 0x02;
+ 212               		.stabn	68,0,48,.LM17-.LFBB2
+ 213               	.LM17:
+ 214 004c 82E0      		ldi r24,lo8(2)
+ 215 004e 85B9      		out 0x5,r24
+ 216 0050 00C0      		rjmp .L3
+ 217               	.LBE3:
+ 218               	.LBE2:
+ 219               		.size	main, .-main
+ 220               		.stabs	"can:(0,89)",128,0,26,1
+ 221               		.stabs	"selecteurAmbre:r(0,59)",64,0,28,17
+ 222               		.stabn	192,0,0,.LBB2-.LFBB2
+ 223               		.stabn	224,0,0,.LBE2-.LFBB2
+ 224               	.Lscope2:
+ 225               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 226               		.stabd	78,0,0
+ 227               		.text
+ 228               		.stabs	"",100,0,0,.Letext0
+ 229               	.Letext0:
+ 230               		.ident	"GCC: (GNU) 4.8.2"
+GAS LISTING /tmp/cccfmxRI.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 pb2.cpp
+     /tmp/cccfmxRI.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/cccfmxRI.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/cccfmxRI.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/cccfmxRI.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/cccfmxRI.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/cccfmxRI.s:108    .text:0000000000000000 _Z10initializev
+     /tmp/cccfmxRI.s:139    .text.startup:0000000000000000 main
+
+UNDEFINED SYMBOLS
+_ZN3canC1Ev
+_ZN3can7lectureEh

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;temp&apos; in &apos;RedBlackTree.insertionCase4(...)&apos; to &apos;tempChild&apos;&#x0D;&#x0A;- Original project: &apos;source&apos;&#x0D;&#x0A;- Original element: &apos;RedBlackTree.insertionCase4(RBNode&lt;T&gt;).temp&apos;&#x0D;&#x0A;- Renamed element: &apos;temp&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;temp&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/&lt;{RedBlackTree.java[RedBlackTree~insertionCase4~QRBNode\&lt;QT;&gt;;@temp!4291!4309!4301!4304!QRBNode\&lt;QT;&gt;;!0!false" name="tempChild" references="true" stamp="1458052026958" version="1.0"/>
+</session>

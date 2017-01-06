@@ -1,0 +1,111 @@
+body{
+	background-color: rgb(128, 128, 128);
+	
+	color: white;
+}
+
+/*Titre*/
+.container
+{
+	text-align: center;
+}
+
+/*Zone de texte*/
+
+.form-group
+{
+	margin-left: 2%;
+}
+.form-control
+{
+	background-color: rgb(30,30,30);
+	width: 100%;
+	height: 50%;
+	color: white;
+}
+
+/*Cadre de la barre de progression*/
+.progress
+{
+	background-color: black;
+}
+
+/*Barre de progression*/
+.progress-bar{
+	width: 0%
+}
+
+.progress-bar  progress-bar-striped{
+
+}
+
+/*Boutons Compter*/
+.btn{
+	font-size: 24px;
+}
+.btn btn-primary
+{
+	width : 30%;
+}
+
+/*Boutons Annuler*/
+.btn btn-danger
+{
+	width : 30%;
+	padding: 20px 2px; 
+}
+
+/*Affichage Jetons*/
+.containerJetons{
+	color : black;
+	text-align: center;
+	font-size: 48px;
+}
+
+#nombreJetons{
+	color : black;
+	text-align: center;
+	font-size: 48px;
+}
+#etatCompter{
+	font-size: 30px;
+}
+/*******************************************************/
+/*************FlexBox********************/
+/*container principal du projet*/
+.primaryBox {
+    display: -webkit-flex;
+    display: flex;
+    width: 90%;
+    height: 90%;
+    margin: 10px;
+}
+
+/*bloc du container principal*/
+.insidePrimary {
+    width: 90%;
+    height: 90%;
+    margin: 10px;
+}
+
+/*container qui est contenu dans le container principal*/
+.secondContainer{
+	display: -webkit-flex;
+    display: flex;
+}
+/*bloc du second container*/
+.insideSecond{
+	width: 90%;
+    height: 90%;
+    margin: 10px;
+}
+
+/*Les flexBox se redimmentionnent quand la page est de 480px ou moins*/
+@media screen and (max-width: 480px) {
+    .primaryBox
+    {
+    	-webkit-flex-direction: column-reverse;
+    	flex-direction: column-reverse;
+	}
+
+}

@@ -1,0 +1,416 @@
+﻿import java.util.LinkedList;
+import java.util.Queue;
+
+public class RedBlackTree<T extends Comparable<? super T> > 
+{
+   private RBNode<T> root;  // Racine de l'arbre
+   
+   enum ChildType{ left, right }
+   
+   public RedBlackTree()
+   { 
+      root = null;
+   }
+   
+   public void printFancyTree()
+   {
+      printFancyTree( root, "", ChildType.right);
+   }
+   
+   private void printFancyTree( RBNode<T> t, String prefix, ChildType myChildType)
+   {
+      System.out.print( prefix + "|__"); // un | et trois _
+      
+      if( t != null )
+      {
+         boolean isLeaf = (t.isNil()) || ( t.leftChild.isNil() && t.rightChild.isNil() );
+         
+         System.out.println( t );
+         String _prefix = prefix;
+         
+         if( myChildType == ChildType.left )
+            _prefix += "|   "; // un | et trois espaces
+         else
+            _prefix += "   " ; // trois espaces
+         
+         if( !isLeaf )
+         {
+            printFancyTree( t.leftChild, _prefix, ChildType.left );
+            printFancyTree( t.rightChild, _prefix, ChildType.right );
+         }
+      }
+      else
+         System.out.print("null\n");
+   }
+   
+   public T find(int key)
+   {
+      return find(root, key);
+   }
+   
+   private T find(RBNode<T> current, int key)  //Exercice 3
+   {
+      // À COMPLÉTER
+   }
+   
+   public void insert(T val)
+   {
+      insertNode( new RBNode<T>( val ) );
+   }
+   
+   private void insertNode( RBNode<T> newNode )
+   { 
+      if (root == null)  // Si arbre vide
+         root = newNode;
+      else
+      {
+         RBNode<T> position = root; // On se place a la racine
+         
+         while( true ) // on insere le noeud (ABR standard)
+         {
+            int newKey = newNode.value.hashCode();
+            int posKey = position.value.hashCode();
+            
+            if ( newKey < posKey ) 
+            {
+               if ( position.leftChild.isNil() ) 
+               {
+                  position.leftChild = newNode;
+                  newNode.parent = position;
+                  break;
+               } 
+                  else 
+                  position = position.leftChild;
+            } 
+            else if ( newKey > posKey ) 
+            {
+               if ( position.rightChild.isNil() )
+               {
+                  position.rightChild = newNode;
+                  newNode.parent = position;
+                  break;
+               }
+               else 
+                  position = position.rightChild;
+            }
+            else // pas de doublons
+               return;
+         }
+      }
+      
+      insertionCases( newNode );
+   }
+
+   private void insertionCases( RBNode<T> X )
+   {
+      // A MODIFIER/COMPLÉTER
+      insertionCase1( X );
+   }
+   
+   private void insertionCase1 ( RBNode<T> X )
+   {
+      // A MODIFIER/COMPLÉTER
+	   //On verifie si le parent de X existe. 
+	   if(X.parent == null){ // S'il n'exite pas, alors X est la racine
+		   X.setToBlack();
+	   }
+	   else{ //Sinon, on verifie les autres conditions.
+		    insertionCase2( X ); 
+	   }
+   }
+
+   private void insertionCase2( RBNode<T> X )
+   {
+      // A MODIFIER/COMPLÉTER
+	   if(X.parent.isBlack()){ //Si le parent de X est noir, tout est correct
+		   //Tout est correct
+	   }
+	   else{
+		   insertionCase3( X ); //Sinon, on va verifier la condition 3
+	   }
+   }
+
+   private void insertionCase3( RBNode<T> X )
+   {
+      // A MODIFIER/COMPLÉTER
+	   if(X.parent.isRed() && X.uncle().isRed()){ //Ici, on verifie si le parent ainsi que l'oncle sont rouge.
+		   X.parent.setToBlack(); // Si c'est le cas, on met le parent a noir,
+		   X.uncle().setToBlack(); //l'oncle a noir et
+		   X.grandParent().setToRed(); //le grand-parent a rouge.
+		   insertionCases(X.grandParent()); //Ensuite, on doit verifier si le grand parent respecte les 5 regles d'insertions.
+	   }
+	   else{ // Si le parent ou l'oncle ne sont pas rouge,
+		   insertionCase4( X ); //On passe a la prochaine condition.
+	   }
+   }
+
+   private void insertionCase4( RBNode<T> X )
+   {
+      // A MODIFIER/COMPLÉTER
+	   if(X.parent.isRed() && X.uncle().isBlack()){ // Ici, on verifie si le parent est rouge et que l'oncle est noir. 
+		   
+		   if(X == X.parent.leftChild){ //Ici, on verifie si X est l'enfant de gauche.
+			   
+			   rotateRight( X ); // Rotation a droite.
+			   insertionCase5( X.rightChild ); //On verifie la cas 5 sur l'enfant de droite de X.
+		   }
+		   else if(X == X.parent.rightChild){ //Ici, on verifie si X est l'enfant de droite.
+			  
+			   rotateLeft( X ); //Ici, on fait la rotation a gauche.
+			   insertionCase5( X.leftChild ); //On verifie la cas 5 sur l'enfant de gauche de X.
+		   }
+		   
+	   }
+	   
+      insertionCase5( X );
+   }
+
+   private void insertionCase5( RBNode<T> X )
+   {
+      // A MODIFIER/COMPLÉTER
+	   
+	   if(X.parent.isRed() && X.uncle().isBlack()){ // On verifie si l'enfant l'oncle est noir et que le parent est rouge.
+		   if(X == X.parent.rightChild && X.parent == X.grandParent().rightChild){// Si l'enfant est a la droite de parent et si parent est l'enfant de droite de grand-parent.
+			   X.parent.setToBlack();
+			   X.grandParent().setToRed();
+			   rotateLeft( X );
+		   }
+		   
+		   else if(X == X.parent.leftChild && X.parent == X.grandParent().leftChild){// Si l'enfant est a la gauche de parent et si parent est l'enfant de gauche de grand-parent.
+			   X.parent.setToBlack();
+			   X.grandParent().setToRed();
+			   rotateRight( X );
+		   }
+	   }
+      return; 
+   }
+   
+   private void rotateLeft( RBNode<T> G )
+   {
+      // A MODIFIER/COMPLÉTER
+	   
+	   RBNode<T> tempChild = G; // Ici, on cree un objet ou on va apporter les modifications necessaires a l'enfant
+	   RBNode<T> tempParent = G.parent; // On cree un objet ou on va apporter les modifications necessaires au parent.
+	  
+	   tempChild.parent = G.grandParent();
+	   tempChild.leftChild = G.parent;
+	   G = tempChild;
+	   tempChild = null;
+	   
+	   tempParent.rightChild = new RBNode<T>();
+	   tempParent.parent = G;
+	   G.parent = tempParent;
+	   tempParent = null;
+      return; 
+   }
+   
+   private void rotateRight( RBNode<T> G )
+   {
+      // A MODIFIER/COMPLÉTER
+	   
+	   RBNode<T> tempChild = G; // Ici, on cree un objet ou on va apporter les modifications necessaires a l'enfant
+	   RBNode<T> tempParent = G.parent; // On cree un objet ou on va apporter les modifications necessaires au parent.
+	  
+	   tempChild.parent = G.grandParent(); //On fixe le parent de la variable temporaire de X a son grand-parent. 
+	   tempChild.rightChild = G.parent; //On fixe que maintenant, son parent est maintenant son enfant de droite.
+	   G = tempChild; // On enregistre ces modifications dans X.
+	   tempChild = null; // On fixe la varibale temporaire a null pour ne pas gaspiller d'espace.
+	   
+	   tempParent.leftChild = new RBNode<T>(); //On fixe l'enfant de gauche de l'ancient parent a NIL.
+	   tempParent.parent = G; // On fixe que l'ancient enfant de parent est maintenant son parent.
+	   G.parent = tempParent;  // On enregister les modifications dans le parent.
+	   tempParent = null; //On fixe la variable temporaire a null afin de ne pas gaspiller d'espace.
+      return; 
+   }
+
+   public void printTreePreOrder()
+   {
+      if(root == null)
+         System.out.println( "Empty tree" );
+      else
+      {
+         System.out.print( "PreOrdre ( ");
+         printTreePreOrder( root );
+         System.out.println( " )");
+      }
+      return;
+   }
+   
+   private void printTreePreOrder( RBNode<T> P )  //Exercice 4
+   {
+      // A MODIFIER/COMPLÉTER
+      return; 
+   }
+   
+   public void printTreePostOrder()  //Exercice 4
+   {
+      if(root == null)
+         System.out.println( "Empty tree" );
+      else
+      {
+         System.out.print( "PostOrdre ( ");
+         printTreePostOrder( root );
+         System.out.println( ")");
+      }
+      return;
+   }
+  
+   private void printTreePostOrder( RBNode<T> P )   //Exercice 4
+   {
+      // A MODIFIER/COMPLÉTER
+      return; 
+   }
+   
+
+   public void printTreeAscendingOrder()  //Exercice 4
+   {
+      if(root == null)
+         System.out.println( "Empty tree" );
+      else
+      {
+         System.out.print( "AscendingOrdre ( ");
+         printTreeAscendingOrder( root );
+         System.out.println( " )");
+      }
+      return;
+   }
+  
+   private void printTreeAscendingOrder( RBNode<T> P )   //Exercice 4
+   {
+      // A COMPLÉTER
+	   
+   }
+   
+   
+   public void printTreeDescendingOrder()  
+   {
+      if(root == null)
+         System.out.println( "Empty tree" );
+      else
+      {
+         System.out.print( "DescendingOrdre ( ");
+         printTreeDescendingOrder( root );
+         System.out.println( " )");
+      }
+      return;
+   }
+
+   private void printTreeDescendingOrder( RBNode<T> P )  //Exercice 4
+   {
+      // A COMPLÉTER
+	   
+   }
+   
+   public void printTreeLevelOrder()
+   {
+      if(root == null)
+         System.out.println( "Empty tree" );
+      else
+      {
+         System.out.print( "LevelOrdre ( ");
+         
+         Queue<RBNode<T>> q = new LinkedList<RBNode<T>>();
+         
+         q.add(root);
+         
+         //  À COMPLÉTER
+         
+         System.out.println( " )");
+      }
+      return;
+   }
+   
+   private static class RBNode<T extends Comparable<? super T> > 
+   {
+      enum RB_COLOR { BLACK, RED }  // Couleur possible
+      
+      RBNode<T>  parent;      // Noeud parent
+      RBNode<T>  leftChild;   // Feuille gauche
+      RBNode<T>  rightChild;  // Feuille droite
+      RB_COLOR   color;       // Couleur du noeud
+      T          value;       // Valeur du noeud
+      
+      // Constructeur (NIL)   
+      RBNode() { 
+    	  setToBlack(); 
+      }
+      
+      // Constructeur (feuille)   
+      RBNode(T val)
+      {
+         setToRed();
+         value = val;
+         leftChild = new RBNode<T>();
+         leftChild.parent = this;
+         rightChild = new RBNode<T>();
+         rightChild.parent = this;
+      }
+      
+      RBNode<T> grandParent()
+      {
+         // À COMPLÉTER
+    	  if(this.parent != null){ // A cette ligne, nous verifions si le parent du noeud n'est pas null.
+    		  return this.parent.parent; //S'il ne l'est pas, la methode retourne le grand-parent. Que le grand-parent soit null ou non importe peu ici.
+    	  }
+    	  
+    	  else{
+    		   return null; //Sinon, il retourne un null.
+    	  }
+      }
+      
+      RBNode<T> uncle()
+      {
+         // À COMPLÉTER
+    	  if(this.parent == this.grandParent().rightChild ){ //Ici, on verifie si this est l'enfant de 
+    		                                                 //droite du grand-parent.
+    		  return this.grandParent().leftChild; //Si c'est le cas, on retourne l'enfant du grand-parent 
+    		                                       //a gauche.
+    	  }
+    	  else{// Si le parent n'est pas l'enfant du grand-parent de droite, alors il est celui de gauche.
+    		  return this.grandParent().rightChild; // Alors, nous devrions retourner l'enfant de droite
+    	  }
+      }
+      
+      RBNode<T> sibling()
+      {
+         // À COMPLÉTER
+    	  if(this.parent != null){ // On verifie d'abord s'il y a un parent (au cas que this soit la racine.
+    		  //Ici, on sait qu'il y a un parent.
+    		  if(this == this.parent.leftChild ){ //Ici, on veut savoir si this est l'enfant de gauche de son parent
+    			  return this.parent.rightChild; // Donc, on retourne son frere unique : rightChild. 
+    		  }
+    		  else{ //Si this n'est pas l'enfant de gauche, alors this est l'enfant de droite
+    			  return this.parent.leftChild; //Ainsi, il faudra retourner l'enfant de gauche.
+    		  }
+    	  }
+    	  else{ // Si le parent n'exite pas, 
+    		  return null; //on retournera null.
+    	  }
+      }
+      
+      public String toString()
+      {
+         return value + " (" + (color == RB_COLOR.BLACK ? "black" : "red") + ")"; 
+      }
+      
+      boolean isBlack(){ 
+    	  return (color == RB_COLOR.BLACK); 
+      }
+      
+      boolean isRed(){ 
+    	  return (color == RB_COLOR.RED); 
+      }
+      
+      boolean isNil(){
+    	  return (leftChild == null) && (rightChild == null); 
+      }
+      
+      void setToBlack(){ 
+    	  color = RB_COLOR.BLACK; 
+      }
+      
+      void setToRed(){ 
+    	  color = RB_COLOR.RED; 
+      }
+   }
+}

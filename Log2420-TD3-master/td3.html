@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjonwWBWoE1W6L8sU7KPl7zkRLSaPNC2o&sensor=false"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="map.js"></script>
+	<title>TD3 - LOG2420 - Equipe 18</title>
+	<link rel="icon" href="http://www.colorectal-cancer.ca/blog/wp-content/uploads/2010/06/Quebec.jpg">
+</head>
+	<body>
+		<!-- Debut du conteneur principal -->
+		<div class="mainContainer">
+			<!--div><img src="QuebecCity.jpg"></div-->
+			<div class="blockcontainer">
+				<!-- Debut block pour l'entrer utilisateur pour une ville -->
+				<div id="inputBlock">
+					<!-- Debut partie en francais -->
+					<div id="français">
+						<div class="btn-group">
+							<h1 id = "titlePage">Carte du Québec</h1>
+							<button id="boutonFrancais" class="btn btn-primary">Français</button>
+							<button id="boutonAnglais" class="btn btn-primary">Anglais</button>
+						</div>
+						<br>
+						<p id = "instruction">Entrer le nom d'une ville</p>
+					</div>
+					<!-- Fin partie en francais -->
+
+					<!-- ********************** -->
+
+					<!-- Debut partie en anglais -->
+					<div id="english">
+						<div class="btn-group">
+							<h1>Quebec Map</h1>
+							<button id="frenchButton" class="btn btn-primary">French</button>
+							<button id="englishButton" class="btn btn-primary">English</button>
+						</div>
+						<br>
+						<p>Enter the name of a town</p>
+					</div>
+					<!-- Fin partie en anglais -->
+					<input id="inputNomVille"><br>
+
+				</div>
+				<!-- Fin block pour l'entrer utilisateur pour une ville -->
+
+				<div id="affichageVille" class="col-sm-4">
+					<p id="villeFrancais">Ville choisie: </p>
+					<p id="villeAnglais">Town/City Chosen: </p>
+					<p id="nomVille">hello</p>
+				</div><br>
+				<!-- Fin block pour l'affichage du nom de la ville sélectionnée -->
+			</div>
+			<!-- Fin block pour l'affichage du blockcontainer. -->
+
+			<!-- ************************************************** -->
+			
+			<!--              Debut block pour la map               -->
+			<div id="googleMap"></div>
+			<!--              Fin block pour la map                 -->
+		</div>
+		<!--  du conteneur principal -->
+	</body>
+</html>
