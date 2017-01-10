@@ -1,4 +1,0 @@
-1- Pour enregistrer les touches modifiées dans la configuration il faut peser sur Sauvegarder.
-2- Lorsqu'on introduit une touche déjà utilisée, en validant la case devient rouge pour dire que le changement est refusé, en partant le jeu la touche avant le changement est prise en compte.
-3- Il faut aussi changer les valeurs par défaults valider le changement et ensuite on pourra utiliser cette touche pour une autre case.
-4- Il faut prendre en considération que nous avions configurer les touches demander dans le rapport délicitation, cependant, pour la touche t, il risque d'y avoir un conflit si on configure une des touches du joueur humain dans configuration à t.
